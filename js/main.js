@@ -221,97 +221,10 @@ $(document).ready(function () {
         $("body").addClass("overflow-x-hidden")
     });
 
-    if ($('.carousel-count').length > 0) {
-        carouselCount()
-    }
+   
 
-    if ($(".menu-main").length > 0) {
-        menuMain()
-    }
-
-    if ($(".go-back").length > 0) {
-        goBack()
-    }
-
-    if ($(".mobile-menu-trigger").length > 0) {
-        menuTrigger()
-    }
-
-    if ($(".mobile-menu-close").length > 0) {
-        closeMenu()
-    }
-
-    if ($(".menu-overlay").length > 0) {
-        menuOverlay()
-    }
-
-    if ($('#search-icon').length > 0) {
-        searchIcon()
-    }
-
-    if ($('#searchInput').length > 0) {
-        lookupTable()
-    }
-
-    if ($('#video-player').length > 0) {
-        videoPlayer()
-    }
-
-    if ($('.counter').length > 0) {
-        counterNumber()
-    }
-
-    //Swiper
-    if ($('.homepage-carousel-cls').length > 0) {
-        teaserSwiper()
-    }
-
-    if ($('.news-container-area').length > 0) {
-        teaserSwiper()
-    }
-
-    //Vimeo player
-    if ($('.video-playlist-cls').length > 0) {
-        vimeoVideoPlayer()
-    }
-
-    //Auto complete
-    if ($('#globalquery').length > 0) {
-        autoCompleteSearch(document.getElementById("globalquery"), document.getElementById("searchLink"), "#globalSearch")
-    }
-
-    if ($('#contentTypeForm').length > 0) {
-        autoCompleteSearch(document.getElementById("query"), document.getElementById("pageLink"), "#contentTypeForm")
-    }
-
-    if ($('#searchForm').length > 0) {
-        autoCompleteSearch(document.getElementById("query"), document.getElementById("pageLink"), "#searchForm")
-    }
-
-    if ($('#newsCentreForm').length > 0) {
-        autoCompleteSearch(document.getElementById("query"), document.getElementById("pageLink"), "#newsCentreForm")
-    }
-
-    //Filter and Sorting
-    $(".filter-list li").click(function () {
-        if ($(".filter-list li[select='true']").length > 0) {
-            $("#btnsubmit").text(function (i, text) {
-                return $('#applyLabel').val();
-            })
-        }
-        else {
-            $("#btnsubmit").text(function (i, text) {
-                return $('#closeLabel').val();
-            })
-        }
-    })
-
-    $("#ddsort li").click(function () {
-        if ($(this).attr("select")) {
-            $(this).removeAttr("select");
-        } else {
-            $(this).attr("select", "true");
-        }
-    })
 });
 
+$(document).ready(function () {
+    $('h1:first').attr('id', 'skip');
+});
