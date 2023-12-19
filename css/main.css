@@ -2151,6 +2151,10 @@ a:focus .info-card .info-card-header {
     width: 100%;
 }
 
+.info-card .info-card-header.members {
+    font-size: 16px;
+}
+
 .info-card a {
     color: var(--color-default);
 }
