@@ -1,58 +1,50 @@
 "use strict";
+
 const menu = document.querySelector(".menu");
 let subMenu;
 
 function menuMain() {
-    $(".menu-main").click(function (e) {
-        if (e.target.closest(".menu-item-has-children")) {
-            const hasChildren = e.target.closest(".menu-item-has-children");
-            showSubMenu(hasChildren); // need discussion
+    $(".menu-main").on("click", function (e) {
+        const closestMenuItem = $(e.target).closest(".menu-item-has-children")[0];
+        if (closestMenuItem) {
+            showSubMenu(closestMenuItem);
         }
-    })
+    });
 }
 
 function goBack() {
-    $(".go-back").click(function () {
-        hideSubMenu();
-    })
+    $(".go-back").on("click", hideSubMenu);
 }
 
 function menuTrigger() {
-    $(".mobile-menu-trigger").click(function () {
-        toggleMenu();
-    })
+    $(".mobile-menu-trigger").on("click", toggleMenu);
 }
 
 function closeMenu() {
-    $(".mobile-menu-close").click(function () {
-        toggleMenu();
-    })
+    $(".mobile-menu-close").on("click", toggleMenu);
 }
 
 function menuOverlay() {
-    $(".menu-overlay").click(function () {
-        toggleMenu();
-    })
-}
-function toggleMenu() {
-    $(".menu").toggleClass("active");
-    $(".menu-overlay").toggleClass("active");
+    $(".menu-overlay").on("click", toggleMenu);
 }
 
-function showSubMenu(hasChildren) {
-    subMenu = hasChildren.querySelector(".sub-menu");
-    subMenu.classList.add("active");
-    subMenu.style.animation = "slideLeft 0.5s ease forwards";
-    const menuTitle = hasChildren.querySelector("i").parentNode.childNodes[0].textContent;
+function toggleMenu() {
+    $(".menu, .menu-overlay").toggleClass("active");
+}
+
+function showSubMenu(menuItem) {
+    subMenu = $(menuItem).find(".sub-menu")[0];
+    $(subMenu).addClass("active").css("animation", "slideLeft 0.5s ease forwards");
+    const menuTitle = $(menuItem).find("i").parent().children().first().text();
     $(".menu .mobile-menu-head").addClass("active");
     $(".menu .current-menu-title").text(menuTitle);
     $(".menu .mobile-menu-head").addClass("active");
 }
 
 function hideSubMenu() {
-    subMenu.style.animation = "slideRight 0.5s ease forwards";
+    $(subMenu).css("animation", "slideRight 0.5s ease forwards");
     setTimeout(() => {
-        subMenu.classList.remove("active");
+        $(subMenu).removeClass("active");
     }, 300);
     menu.querySelector(".mobile-menu-head").classList.remove("active");
     $(".menu .current-menu-title").text("");
@@ -60,20 +52,19 @@ function hideSubMenu() {
 }
 
 window.onresize = function () {
-    if (this.innerWidth > 991) {
-        if ($(".menu").hasClass("active")) {
-            toggleMenu();
-        }
+    if (this.innerWidth > 991 && $(".menu").hasClass("active")) {
+        toggleMenu();
     }
-}
+};
 
 function searchIcon() {
-    $('#search-icon').click(function () {
+    $('#search-icon').on("click", function () {
         $('#search-icon i').toggleClass("fa-times");
         $('.search-form').toggleClass("active");
         $(".menu").removeClass("fa-times");
-    })
-    $('.search-icons').keypress(function (event) {
+    });
+
+    $('.search-icons').on("keypress", function (event) {
         var id = event.keyCode;
         if (id == 13) {
             $('#search-icon').trigger('click');
@@ -83,8 +74,10 @@ function searchIcon() {
 
 window.onscroll = () => {
     $(".menu").removeClass("fa-times");
+};
 
-}
+// Rest of the code...
+
 
 //Main menu 
 $(document).ready(function () {
@@ -101,61 +94,6 @@ $(document).ready(function () {
             $(".toast-notification").remove();
         });
     }
-
-    //Filter and Sorting
-    $("#btnsubmit").on("click", function () {        
-        var topicarr = [];
-        for (var i = 0; i < $(".modal-topic-list li[select='true']").length; i++) {
-            var x = document.querySelectorAll(".modal-topic-list li[select='true']")[i].getAttribute("data-value");
-            topicarr.push(x);
-        }
-        var statusarr = [];
-        for (var i = 0; i < $(".modal-status-list li[select='true']").length; i++) {
-            var x = document.querySelectorAll(".modal-status-list li[select='true']")[i].getAttribute("data-value");
-            statusarr.push(x);
-        }
-        var timearr = [];
-        for (var i = 0; i < $(".modal-time-list li[select='true']").length; i++) {
-            var x = document.querySelectorAll(".modal-time-list li[select='true']")[i].getAttribute("data-value");
-            timearr.push(x);
-        }
-        var contentarr = [];
-        for (var i = 0; i < $(".modal-content-list li[select='true']").length; i++) {
-            var x = document.querySelectorAll(".modal-content-list li[select='true']")[i].getAttribute("data-value");
-            contentarr.push(x);
-        }
-
-        if ($("#contentTypeForm").length > 0) {
-            $("#SelectedTopicFilter").val(topicarr.toString());
-            $("#SelectedStatusFilter").val(statusarr.toString());
-            $("#SelectedTimeFilter").val(timearr.toString());
-            $("#contentTypeForm").trigger("submit");
-        }
-        if ($("#newsCentreForm").length > 0) {
-            $("#SelectedTopicFilter").val(topicarr.toString());
-            $("#SelectedContentFilter").val(contentarr.toString());
-            $("#SelectedTimeFilter").val(timearr.toString());
-            $("#newsCentreForm").trigger("submit");
-        }
-        if ($("#subTopicForm").length > 0) {
-            $("#SelectedContentFilter").val(contentarr.toString());
-            $("#subTopicForm").trigger("submit");
-        }
-        if ($("#searchForm").length > 0) {
-            $("#SelectedTopicFilter").val(topicarr.toString());
-            $("#SelectedContentFilter").val(contentarr.toString());
-            $("#SelectedTimeFilter").val(timearr.toString());
-            $("#searchForm").trigger("submit");
-        }
-        if ($("#collectionForm").length > 0) {
-            if ($('.collection-focus')[0] !== undefined) {
-                localStorage["ScrollPositionX"] = $('.collection-focus').offset().top;
-            }
-            $("#SelectedContentFilter").val(contentarr.toString());
-            $("#SelectedTimeFilter").val(timearr.toString());
-            $("#collectionForm").trigger("submit");
-        }
-    });
 
     $('ul.dropdown-menu li').on("click", function () {
         $("#SelectedSortType").val($(this).attr("data-value"));
