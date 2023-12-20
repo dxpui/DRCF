@@ -1129,17 +1129,21 @@ header .search-box {
 .header .menu>ul>li .sub-menu>ul>li {
     line-height: 1;
     border-bottom: 1px solid var(--color-white);
-    padding: 10px;
 }
 
 .header .menu>ul>li .sub-menu>ul>li>a {
     display: inline-block;
-    padding: 10px 0;
+    padding: 20px 10px;
     font-size: 15px;
     color: var(--color-white);
     transition: color 0.3s ease;
     text-decoration: none;
     text-transform: capitalize;
+    width: 100%;
+}
+.header .menu>ul>li .sub-menu>ul>li>a:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-default);
 }
 
 .header .menu>ul>li .single-column-menu {
@@ -5034,7 +5038,7 @@ padding-right: 80px; */
 }
 
 .social-list-group {
-    padding: 50px 100px;
+    padding: 50px;
 }
 
 @media(max-width: 991px) {
