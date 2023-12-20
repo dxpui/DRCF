@@ -4,11 +4,11 @@
 
 :root {
     /* Most text and often a background colour (eg menus, footer, page headers) */
-    --color-default: #000045;
+    --color-default: #014D85;
     /* Used as a general highlight/background colour, for hyperlinks and an option for page headers */
     --color-primary: #5000F2;
     /* Often used for hoverstates as well as a colour option for page headers */
-    --color-secondary: #FF8A00;
+    --color-secondary: #d3d3d3;
     /* Page headers 1*/
     --color-green: #36C280;
     /* Page headers 2*/
