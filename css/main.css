@@ -1347,7 +1347,7 @@ header .search-box {
         position: relative;
         z-index: 501;
         position: sticky;
-        background-color: var(--color-primary);
+        background-color: var(--color-default);
         top: 0;
     }
 
