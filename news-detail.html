@@ -223,12 +223,24 @@
 
   <main>
     <div id="skip" class="visually-hidden">Home page features</div>
-
-    <section>
+    <section class="breadcrumb-position">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item ellipsis"><a href="#">Level1 title</a></li>
+              <li class="breadcrumb-item active ellipsis" aria-current="page">Level2 title</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="mt-4">
       <div class="row g-0">
         <div class="col-md-6 order-last order-md-first">
           <div class="hero-banner blue-bg h-100">
-            <span class="badge gray-bg mb-3">News</span>
+            <!--<span class="badge gray-bg mb-3">News</span>-->
             <h1>DRCF Publishes Immersive Futures Foresight Paper</h1>
             <p class="mt-3">12 December 2023</p>
           </div>
