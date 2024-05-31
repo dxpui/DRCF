@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DRCF website</title>
+  <link rel="icon" href="assets/img/favicon-3.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+  <a class="skip-to-content-link" href="#skip" tabindex="0">Skip to main content</a>
+  <!-- header start hare-->
+  <header class="header fixed-top d-flex align-items-center">
+    <a class="skip-to-content-link" href="#skip" tabindex="0">Skip to main content</a>
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto me-lg-0">
+        <a href="index.html"> <img class="brand-logo" src="assets/img/DRCF-logo-WEB.png" alt="DRCF" /></a>
+      </div>
+
+      <!-- menu start here -->
+        <div class="header-item ms-auto">
+        <div class="menu-overlay">
+        </div>
+        <nav class="menu">
+          <div class="mobile-menu-head">
+            <div class="go-back"><i class="fa fa-angle-left"></i></div>
+            <div class="current-menu-title"></div>
+            <div class="mobile-menu-close">×</div>
+          </div>
+          <ul class="menu-main">
+            <li class="menu-item-has-children">
+              <a href="#">About the DRCF</a>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">News & Events</a>            
+			</li>
+            <li class="menu-item-has-children">
+              <a href="#">Publications<i class="fa fa-angle-down"></i></a>
+              <div class="sub-menu mega-menu mega-menu-column-4">
+                <div class="list-item">                  
+                  <ul>
+                    <li><a href="#">Blogs & Articles</a></li>
+                    <li><a href="#">Papers</a></li>
+                    <li><a href="#">Joint Statements</a></li>
+                    <li><a href="#">Annual Reports</a></li>
+                    <li><a href="#">Workplans</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <ul>
+                    <li class="mb-3"><span class="detail-text">
+                        Optional explanatory text here and quick links to popular or topical content. <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur.</span></li>
+                  </ul>
+                </div>             
+			  </div>
+            </li>
+			
+            <li class="menu-item-has-children">
+              <a href="#">AI and Digital Hub<i class="fa fa-angle-down"></i></a>
+              <div class="sub-menu mega-menu mega-menu-column-4">               
+                <div class="list-item">                  
+                  <ul>
+                    <li><a href="#">Apply Now</a></li>
+                    <li><a href="#">Case Study</a></li>
+                  </ul>
+                </div>			
+			  </div>
+            </li>
+			
+	        <li class="menu-item-has-children">
+              <a href="#">More<i class="fa fa-angle-down"></i></a>
+              <div class="sub-menu mega-menu mega-menu-column-4">               
+                <div class="list-item">                  
+                  <ul>
+                    <li><a href="#">Key Projects</a></li>
+                    <li><a href="#">Research Library</a></li>
+                    <li><a href="#">Recruitment</a></li>
+                  </ul>
+                </div>			
+			  </div>
+            </li>		
+          </ul>
+        </nav>
+      </div>     
+	 <!-- menu end here -->
+	 
+	 <div class="search-icons d-flex align-items-center order-2 order-lg-1">
+        <i class="fas fa-search" id="search-icon"></i>
+      </div>
+	  
+       <form action="" class="search-form">
+        <div class="search-box mx-auto mb-3 position-relative">
+          <input type="search" class="search-box-input" name="query" aria-label="Global Search" placeholder="What are you looking for?" id="globalquery" autocomplete="off">
+          <label for="globalquery" class="fas fa-search d-none"><span class="d-none">Search</span></label>
+          <a href="javascript:void(0)" class="fas fa-search gl-search" onclick="globalSearch()"><span class="d-none">Search</span></a>
+        </div>
+	  </form>	  
+
+      <!-- mobile menu trigger -->
+      <div class="mobile-menu-trigger order-3 order-lg-2">
+        <i class="mobile-nav-toggle mobile-nav-show fa-solid fa-bars"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none fa-solid fa-xmark"></i>
+      </div>
+    </div>
+  </header>
+ 
+ <main>
+<section class="breadcrumb-position text-light">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html" aria-expanded="false">Home</a></li>
+              <li class="breadcrumb-item ellipsis"><a href="#" aria-expanded="false">Projects</a></li>
+              <li class="breadcrumb-item active ellipsis" aria-current="page">Level2 title</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section>
+      <img class="responsive-image" src="assets/img/INDRC-projects-image.jpg" alt="">
+    </section>
+    <section>
+      <div class="hero-banner-narrow blue-bg">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <h1><strong>International Network for Digital Regulation Cooperation (INDRC)</strong></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <div class="row row-cols-auto g-0 mt-5">
+              <div class="col">
+                <span class="">
+                 <i class="fa fa-calendar-day me-2 text-color-cls"></i><small>21 May 2024</small>
+                  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-2 order-lg-0 order-2 mt-lg-0 mt-4">
+          </div>
+          <div class="col-lg-8">
+            <strong class="standfirst">
+              <h1><strong>International Network for Digital Regulation Cooperation (INDRC)</strong></h1>
+            </strong><br><br>
+          <div class="blogdetail-txt">
+               <div><p paraid="1657629543" paraeid="{e8cf1124-d35a-4059-b6c6-b8387d7101e1}{204}">One of the DRCF’s key objectives is to “strengthen international engagement with regulatory bodies to exchange information and share best practice regarding approaches to the regulation of digital markets”.</p></div><div><p paraid="2097043950" paraeid="{e8cf1124-d35a-4059-b6c6-b8387d7101e1}{230}">Given the ubiquitous nature of new technologies and the global reach of big tech firms, we recognise the importance of working closely with international counterparts to achieve a global dialogue on digital regulatory issues.</p></div><div><p paraid="134642120" paraeid="{e8cf1124-d35a-4059-b6c6-b8387d7101e1}{254}">As part of our engagement, we work actively with other countries considering how to increase collaboration between regulatory authorities and have launched the International Network for Digital Regulation Cooperation, to link together similar bodies overseas and share good practice on effective interdisciplinary cooperation.</p></div><div><p paraid="1898469022" paraeid="{f3139a10-5590-46ee-9ee5-f13af8caa7fc}{23}">The DRCF launched the <a href="https://www.drcf.org.uk/news-and-events/news/launch-of-the-international-network-for-digital-regulation-cooperation-indrc">International Network for Digital Regulation Cooperation (INDRC)</a> in June 2023 to build relationships with regulators from around the globe seeking to increase domestic cooperation in their jurisdictions.</p></div><div><p paraid="655173991" paraeid="{f3139a10-5590-46ee-9ee5-f13af8caa7fc}{79}">The INDRC’s objectives are to foster discussion between regulators on coherence across digital regimes, and to gather insights into how jurisdictions are approaching domestic regulatory coherence.&nbsp;&nbsp;The INDRC meets approximately every six months.</p></div><div><p paraid="1881185862" paraeid="{f3139a10-5590-46ee-9ee5-f13af8caa7fc}{105}">At its inaugural meeting in June 2023, the UK DRCF welcomed colleagues from the <a href="https://dp-reg.gov.au/">Australian Digital Platform Regulators Forum (DP-REG)</a>, the <a href="https://www.acm.nl/en/about-acm/cooperation/national-cooperation/digital-regulation-cooperation-platform-sdt">Netherlands’ Digital Regulation Cooperation Platform (SDT) </a>and the Irish Digital Regulators Group (DRG) to London for the inaugural meeting of the INDRC. The agenda included an introduction to the DRCF and a discussion on the SDT’s work on online transparency.</p></div><div><p paraid="1686161922" paraeid="{f3139a10-5590-46ee-9ee5-f13af8caa7fc}{135}">In January 2024, the UK DRCF hosted the second meeting of the INDRC in London with participation from members of DP-REG, SDT and DRG. We were joined by colleagues from the newly formed <a href="https://competition-bureau.canada.ca/how-we-foster-competition/collaboration-and-partnerships/canadian-digital-regulators-forum">Canada Digital Regulators Forum (CDRF)</a>. Participants shared updates on how their jurisdictions are responding to the regulatory challenges of AI and considered the current constraints and practical implications of information sharing across members of their coordination bodies.</p></div><div><p paraid="1335124224" paraeid="{f3139a10-5590-46ee-9ee5-f13af8caa7fc}{181}">The INDRC is currently planning its third and fourth meetings in June and November 2024.</p></div><div><p paraid="1245392926" paraeid="{f3139a10-5590-46ee-9ee5-f13af8caa7fc}{199}">The INDRC is open to participation from other digital regulators’ coordination bodies. For any enquiries, please contact <a href="mailto:drcf@ofcom.org.uk" target="_blank" rel="noreferrer noopener">drcf@ofcom.org.uk</a>.</p></div>  
+             </div>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container-xl">
+        <h2 class="visually-hidden text-white">Footer</h2>
+        <div class="row">
+          <div class="col-md-12 col-lg-3">
+            <section class="mt-0 mt-lg-5  social">
+              <h3 class="follow fw-bold">Follow us </h3>
+              <ul class="list-unstyled social-icons">
+                <li class="social-icons-list">
+                  <a class="" href="#" title="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="social-icons-list">
+                  <a class="" href="#" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="social-icons-list">
+                  <a class="" href="#" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </section>
+          </div>
+          <div class="col-md-12 col-lg-3">
+            <section class="mt-0 mt-lg-5  about-ofcom">
+              <h3 class="follow fw-bold">About DRCF </h3>
+              <ul class="list-unstyled">
+                <li class="">
+                  <a class="footer-link" href="#">Key Projects</a>
+                </li>
+                <li class="">
+                  <a class="footer-link" href="#">Research Library</a>
+                </li>
+                <li class="">
+                  <a class="footer-link" href="#">Recruitment</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-md-12 col-lg-3">
+            <section class="mt-0 mt-lg-5 about-ofcom">
+              <h3 class="follow fw-bold">AI and Digital Hub</h3>
+              <ul class="list-unstyled">
+                <li class="">
+                  <a class="footer-link" href="#">Apply Now</a>
+                </li>
+                <li class="">
+                  <a class="footer-link" href="#">Case Study</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-md-12 col-lg-3">
+            <section class="mt-0 mt-lg-5 about-ofcom">
+              <h3 class="follow fw-bold">Aout this website</h3>
+              <ul class="list-unstyled">
+                <li class="">
+                  <a class="footer-link" href="#">Cookies</a>
+                </li>
+                <li class="">
+                  <a class="footer-link" href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </section>
+          </div>		  
+        </div>
+      </div>
+      <div class="container-xl">
+        <div class="row copyrights ">
+          <div class="copyright-text text-lg-start text-start text-sm-end">© Copyright DRCF All Rights Reserved</div>
+        </div>
+      </div>
+    </footer>	
+	
+    <a class="back-to-top">
+      <i class="fa-solid fa-chevron-up"></i>
+      <span>Back to top</span>
+    </a>
+  </main>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

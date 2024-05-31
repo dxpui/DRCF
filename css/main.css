@@ -3875,6 +3875,11 @@ a:focus .info-card.news-center:before {
     padding: 2px;
 }
 
+.title-block .col-md-7, 
+.title-block .col-md-5{
+    width: 100%;
+}
+
 .title-block .title-block-img {
     width: 100%;
     height: 100%;
@@ -5192,13 +5197,13 @@ padding-right: 80px; */
 }
 
 .pagination-block .single-arrow-clear {
-    background-image: url(/assets/img/web-icons/single-arrow-clear.svg);
+    background-image: url(../assets/img/web-icons/single-arrow-clear.svg);
     width: 45px;
     height: 45px;
 }
 
 .pagination-block .double-arrow-clear {
-    background-image: url(/assets/img/web-icons/double-arrow-clear.svg);
+    background-image: url(../assets/img/web-icons/double-arrow-clear.svg);
     width: 45px;
     height: 45px;
 }
@@ -5206,25 +5211,25 @@ padding-right: 80px; */
 .pagination-block .single-arrow-clear.disabled,
 .pagination-block .single-arrow-clear.disabled:hover,
 .pagination-block .single-arrow-clear.disabled:focus-visible {
-    background-image: url(/assets/img/web-icons/single-arrow-clear-dis.svg);
+    background-image: url(../assets/img/web-icons/single-arrow-clear.svg);
     pointer-events: none;
 }
 
 .pagination-block .double-arrow-clear.disabled,
 .pagination-block .double-arrow-clear.disabled:hover,
 .pagination-block .double-arrow-clear.disabled:focus-visible {
-    background-image: url(/assets/img/web-icons/double-arrow-clear-dis.svg);
+    background-image: url(../assets/img/web-icons/double-arrow-clear-dis.svg);
     pointer-events: none;
 }
 
 .pagination-block .single-arrow-clear:hover,
 .pagination-block .single-arrow-clear:focus-visible {
-    background-image: url(/assets/img/web-icons/single-arrow-blue.svg);
+    background-image: url(../assets/img/web-icons/single-arrow-blue.svg);
 }
 
 .pagination-block .double-arrow-clear:hover,
 .pagination-block .double-arrow-clear:focus-visible {
-    background-image: url(/assets/img/web-icons/double-arrow-blue.svg);
+    background-image: url(../assets/img/web-icons/double-arrow-blue.svg);
 }
 
 .pagination-block .page-item {

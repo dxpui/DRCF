@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DRCF website</title>
+  <link rel="icon" href="assets/img/favicon-3.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+  <a class="skip-to-content-link" href="#skip" tabindex="0">Skip to main content</a>
+  <!-- header start hare-->
+  <header class="header fixed-top d-flex align-items-center">
+    <a class="skip-to-content-link" href="#skip" tabindex="0">Skip to main content</a>
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto me-lg-0">
+        <a href="index.html"> <img class="brand-logo" src="assets/img/DRCF-logo-WEB.png" alt="DRCF" /></a>
+      </div>
+
+      <!-- menu start here -->
+        <div class="header-item ms-auto">
+        <div class="menu-overlay">
+        </div>
+        <nav class="menu">
+          <div class="mobile-menu-head">
+            <div class="go-back"><i class="fa fa-angle-left"></i></div>
+            <div class="current-menu-title"></div>
+            <div class="mobile-menu-close">×</div>
+          </div>
+          <ul class="menu-main">
+            <li class="menu-item-has-children">
+              <a href="#">About the DRCF</a>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">News & Events</a>            
+			</li>
+            <li class="menu-item-has-children">
+              <a href="#">Publications<i class="fa fa-angle-down"></i></a>
+              <div class="sub-menu mega-menu mega-menu-column-4">
+                <div class="list-item">                  
+                  <ul>
+                    <li><a href="#">Blogs & Articles</a></li>
+                    <li><a href="#">Papers</a></li>
+                    <li><a href="#">Joint Statements</a></li>
+                    <li><a href="#">Annual Reports</a></li>
+                    <li><a href="#">Workplans</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <ul>
+                    <li class="mb-3"><span class="detail-text">
+                        Optional explanatory text here and quick links to popular or topical content. <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur.</span></li>
+                  </ul>
+                </div>             
+			  </div>
+            </li>
+			
+            <li class="menu-item-has-children">
+              <a href="#">AI and Digital Hub<i class="fa fa-angle-down"></i></a>
+              <div class="sub-menu mega-menu mega-menu-column-4">               
+                <div class="list-item">                  
+                  <ul>
+                    <li><a href="#">Apply Now</a></li>
+                    <li><a href="#">Case Study</a></li>
+                  </ul>
+                </div>			
+			  </div>
+            </li>
+			
+	        <li class="menu-item-has-children">
+              <a href="#">More<i class="fa fa-angle-down"></i></a>
+              <div class="sub-menu mega-menu mega-menu-column-4">               
+                <div class="list-item">                  
+                  <ul>
+                    <li><a href="projects.html">Key Projects</a></li>
+                    <li><a href="#">Research Library</a></li>
+                    <li><a href="#">Recruitment</a></li>
+                  </ul>
+                </div>			
+			  </div>
+            </li>		
+          </ul>
+        </nav>
+     
+	 </div>     
+	 <!-- menu end here -->
+	 
+	 <div class="search-icons d-flex align-items-center order-2 order-lg-1">
+        <i class="fas fa-search" id="search-icon"></i>
+      </div>
+	  
+       <form action="" class="search-form">
+        <div class="search-box mx-auto mb-3 position-relative">
+          <input type="search" class="search-box-input" name="query" aria-label="Global Search" placeholder="What are you looking for?" id="globalquery" autocomplete="off">
+          <label for="globalquery" class="fas fa-search d-none"><span class="d-none">Search</span></label>
+          <a href="javascript:void(0)" class="fas fa-search gl-search" onclick="globalSearch()"><span class="d-none">Search</span></a>
+        </div>
+	  </form>	  
+
+      <!-- mobile menu trigger -->
+      <div class="mobile-menu-trigger order-3 order-lg-2">
+        <i class="mobile-nav-toggle mobile-nav-show fa-solid fa-bars"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none fa-solid fa-xmark"></i>
+      </div>
+    </div>
+  </header>
+ 
+  <main>
+    <div id="skip" class="visually-hidden">Home page features</div>
+    <section class="breadcrumb-position">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item ellipsis"><a href="blogs.html">Blogs</a></li>
+              <li class="breadcrumb-item active ellipsis" aria-current="page">DRCF Generative AI Adopters Roundtable: High-level Findings
+</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="row g-0">
+        <div class="col-md-6 order-last order-md-first">
+          <div class="hero-banner blue-bg h-100">
+            <!--<span class="badge gray-bg mb-3">News</span>-->
+            <h1>DRCF Generative AI Adopters Roundtable: High-level Findings</h1>
+            <p class="mt-3">12 December 2023</p>
+          </div>
+        </div>
+        <div class="col-md-6 order-first order-md-last">
+          <img class="w-100 hero-banner-img" src="assets/img/CFI-image-for-website-story.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="container-xl my-5">
+      <div class="row">
+        <div class="col-12">
+	<div class="blogdetail-txt">
+               <p>In January 2024, the DRCF’s AI team held a virtual workshop attended by 21 firms who are deploying Generative AI (GenAI). This follows a discussion last year that examined how DRCF regulators could <a href="https://www.drcf.org.uk/publications/blogs/maximising-the-benefits-of-generative-ai-for-the-digital-economy">maximise the benefits</a> of this technology.</p><p>The workshop explored a range of GenAI deployments; considered their opportunities and risks; and examined how policymakers could support AI innovation. Below we outline the most salient discussion points and set out the DRCF’s next steps on GenAI.</p><p><strong>GenAI is being deployed across a wide range of sectors to power numerous applications</strong></p><p>We heard about GenAI applications being deployed across HR, cybersecurity, social media, safety technology, telecoms, broadcast, and mental health services, among other domains. These applications were intended to serve several purposes, including:</p><ul><li>Improving back-office functions, for example to save time by automating the creation of job descriptions.</li><li>Facilitating direct engagement with customers, for example by powering chatbots that can provide information on new deals or direct customers to relevant resources.</li><li>Improving safety and cybersecurity, for example using LLMs (Large Language Models) to classify and analyse malicious content and stress test clients’ systems against attacks.</li></ul><p>We heard that deploying GenAI helped firms to remain competitive in the marketplace and supported wider business efficiencies, for example helping to streamline processes and save staff resource. A couple of firms told us that they had received promising feedback on their deployment of GenAI, with one company noting that its employees were impressed with their chatbots’ ability to recognise the intent of users.</p><p><strong>While GenAI is already bringing demonstrable benefits for businesses and customers, firms are cautious about moving too quickly to deploy GenAI in contexts which they believe could pose risk</strong></p><p>Firms were conscious that GenAI models are rapidly evolving, becoming increasingly powerful, and may pose risks if deployed without care. They said they deliberately identified lower-risk use cases for initial deployment, for example, for parts of their business that experienced limited interaction with customers. Many firms were also taking a phased approach to deployment, including by testing models in discrete parts of their business before rolling them out more widely.</p><p>Some firms have their eye on further GenAI use cases. One company from the broadcast sector indicated their interest in using GenAI to facilitate transcription and translation tasks during the production and editing process. Some of these use cases are in the early stage of research and development.</p><p><strong>Many of the safety measures that firms have implemented for GenAI are the same as those needed to safeguard other types of AI systems.</strong></p><p>Firms explained a range of steps that they take both pre- and post- deployment of GenAI, which included:</p><p><em>Pre-deployment</em></p><ul><li>Due diligence to ensure that a product meets domestic and international regulatory requirements.</li><li>Adapting systems to ensure that the model is appropriate for the intended use case, for example, by fine-tuning.</li><li>Testing, for example red teaming by using prompts to try to get the model to produce harmful outputs.</li></ul><p><em>Post deployment</em></p><ul><li>Supportive partnerships with vendors to ensure continued assistance.</li><li>User-feedback processes to monitor uptake, use and complaints.</li></ul><p>Many of the safety steps we heard about mirrored those discussed in the <a href="https://www.gov.uk/government/publications/transparency-in-the-procurement-of-algorithmic-systems-findings-from-our-workshops">DRCF’s 2022 workshops on procuring AI systems</a>. This suggests that many of the safeguards used to mitigate the risk associated with AI systems in general are also applicable for managing the potential harm posed by more novel GenAI models.</p><p><strong>Firms expressed interest in developing models in-house but many lack the infrastructure, compute and data needed</strong></p><p>We heard that firms sourced GenAI models and datasets from a range of vendors to avoid lock-in and ensure the best products for their clients. Firms purchased off-the-shelf GenAI models, accessed models via API or used open-source foundation models that they finetuned in-house. Currently, firms told us that they couldn’t develop their own foundation models in-house, given compute costs among other factors.</p><p>Many firms expressed an ambition to use, or make greater use of, open models in the future. They saw fine-tuning and deploying open models as being less computationally intensive than training a model from scratch, and as giving them greater control to adapt and test existing foundation models for their own purposes. Firms acknowledged potential risks posed by open models although noted that many risks remain in proprietary models.</p><p><strong>Firms would like Government and regulators to clarify transparency obligations across the AI supply chain</strong></p><p>Firms pointed to several regulatory regimes which could govern aspects of GenAI, including IP (Intellectual property) and copyright, data protection, online safety and equalities law.</p><p>Firms told us that the complexity of the GenAI supply chain could create additional challenges for compliance. They strongly supported the idea of transparency guidance for model developers and downstream adopters, including advice on how best to make available information on training data, risk assessment, and model performance.</p><p>They were also interested in how existing regulations would apply to new GenAI companies who have recently entered the market.</p><p>The DRCF’s AI team will be hosting an internal workshop this year, where we will explore transparency in more detail.</p><p><strong>Some firms raised concerns about the wider implications of GenAI on society, and discussed how AI solutions play a role</strong></p><p>Several participants raised concerns about the wider implications of GenAI on democracy and society, for example how it could facilitate bad actors' ability to create misinformation or fraudulent content.</p><p>We discussed potential solutions to address the creation of harmful AI-generated content. Some participants were hopeful about AI-content classifiers, which are a type of automated content moderation tool that considers whether content is or is not something, e.g., a hate speech classifier would identify whether text is hate speech or not. Others were wary of nascent solutions like watermarking, which they noted could be imperfect.</p><p><strong>Firms called for policymakers to continue collaboration efforts to support regulatory coherence on AI</strong></p><p>The US, UK and EU have taken different regulatory approaches to AI, which firms felt could lead to challenges – particularly for those operating across domestic and international markets.</p><p>Firms commended international commitments made at the UK’s AI Safety Summit and called for continued cooperation on AI definitions and AI standards to support innovation and assessment.</p><p>Firms also broadly supported the UK Government’s approach to AI regulation. They welcomed the Government’s commitment to exploring regulatory gaps, enabling AI innovation and exploring accountability for AI across the supply chain.</p><p><strong>Generative AI remains a priority for DRCF regulators</strong></p><p>The DRCF is engaging closely with the Government on AI and has just launched its <a href="https://www.drcf.org.uk/news-and-events/news/update-on-the-drcf-ai-and-digital-hub-">AI and Digital Hub</a> pilot, which will help innovators bring new AI products safely to market.</p><p>Individually, the four DRCF regulators have published AI statements in response to the government’s new AI regulation framework (Ofcom’s statement can be found <a href="https://www.ofcom.org.uk/__data/assets/pdf_file/0021/281622/Ofcoms-strategic-approach-to-AI.pdf">here</a>). Each regulator will also continue to undertake discrete GenAI-related research and investigations:</p><ul><li>The ICO is <a href="https://ico.org.uk/about-the-ico/ico-and-stakeholder-consultations/ico-consultation-series-on-generative-ai-and-data-protection">clarifying</a> how data protection applies to the development and use of GenAI and is developing a joint statement on foundation models with the CMA;</li><li>The CMA has published its update <a href="https://www.gov.uk/government/publications/ai-foundation-models-update-paper">report</a> on foundation models and will be continuing its work in this area;</li><li>Ofcom will publish discussion papers exploring measures to help address harmful AI-generated content (focusing initially on red teaming and deepfake detection);</li><li>The FCA and Bank of England jointly published their <a href="https://www.bankofengland.co.uk/prudential-regulation/publication/2023/october/artificial-intelligence-and-machine-learning">AI Feedback Statement</a> based on findings from the <em>Machine learning in UK financial services 2022 survey </em>and will conduct a third joint ML survey this year.</li></ul><p><em>If you would like to hear more from the DRCF, please contact </em><a href="mailto:DRCF@ofcom.org.uk"><em>DRCF@ofcom.org.uk.</em></a></p>  
+             </div>	
+        </div>
+      </div>
+    </section>
+    <section class="news-gray-bg news-container-area mb-5">
+      <h2 class="text-center h3 mb-4">Top Blogs & Articles
+        <button class="btn btn-primary">
+          All top blogs & articles
+ <i class="ms-2 fa-solid fa-arrow-right"></i>
+        </button>
+      </h2>
+      <!-- <p class="text-center h4 mb-4">
+        See below for all the latest DRCF updates
+      </p> -->
+
+      </h2>
+      <div class="swiper-outer container-xl">
+        <div class="swiper mySwiper latest-news-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="">
+                <div class="info-card news-center">
+                  <img src="assets/img/CFI-image-for-website-story.jpg" class="card-img-small mb-3" alt="...">
+                  <div class="sub-topic-text d-flex justify-content-between align-items-start">
+                    <span class="info-card-header">Fairness in AI: A View from the DRCF</span>
+                    <svg class="svg-arrow" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20.2449" cy="19.7964" r="19" />
+                      <path d="M22.6774 12.2964L30.8422 20.2964L22.6774 28.2964" stroke-width="2" stroke-linejoin="bevel" />
+                      <path d="M30.6472 20.2964L9.64722 20.2964" stroke-width="2" stroke-linejoin="bevel" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="info-card news-center">
+                  <img src="assets/img/Kate-Jones-at-AI-Fringe-BL-2-Nov-23.png" class="card-img-small mb-3" alt="...">
+                  <div class="sub-topic-text d-flex justify-content-between align-items-start">
+                    <span class="info-card-header">Fairness in AI: A View from the DRCF</span>
+                    <svg class="svg-arrow" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20.2449" cy="19.7964" r="19" />
+                      <path d="M22.6774 12.2964L30.8422 20.2964L22.6774 28.2964" stroke-width="2" stroke-linejoin="bevel" />
+                      <path d="M30.6472 20.2964L9.64722 20.2964" stroke-width="2" stroke-linejoin="bevel" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="info-card news-center">
+                  <img src="assets/img/Kate-Jones-high-res.jpg" class="card-img-small mb-3" alt="...">
+                  <div class="sub-topic-text d-flex justify-content-between align-items-start">
+                    <span class="info-card-header">Fairness in AI: A View from the DRCF</span>
+                    <svg class="svg-arrow" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20.2449" cy="19.7964" r="19" />
+                      <path d="M22.6774 12.2964L30.8422 20.2964L22.6774 28.2964" stroke-width="2" stroke-linejoin="bevel" />
+                      <path d="M30.6472 20.2964L9.64722 20.2964" stroke-width="2" stroke-linejoin="bevel" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="info-card news-center">
+                  <img src="assets/img/CFI-image-for-website-story.jpg" class="card-img-small mb-3" alt="...">
+                  <div class="sub-topic-text d-flex justify-content-between align-items-start">
+                    <span class="info-card-header">Fairness in AI: A View from the DRCF</span>
+                    <svg class="svg-arrow" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20.2449" cy="19.7964" r="19" />
+                      <path d="M22.6774 12.2964L30.8422 20.2964L22.6774 28.2964" stroke-width="2" stroke-linejoin="bevel" />
+                      <path d="M30.6472 20.2964L9.64722 20.2964" stroke-width="2" stroke-linejoin="bevel" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="info-card news-info ">
+                  <img src="assets/img/AI-Fringe.jpg" class="card-img-small mb-3" alt="...">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <span class="info-card-header">Lorem ipsum dolor sit</span>
+                    <svg class="svg-arrow" width="40" height="40" viewBox="0 0 40 40"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20.2449" cy="19.7964" r="19" />
+                      <path d="M22.6774 12.2964L30.8422 20.2964L22.6774 28.2964" stroke-width="2"
+                        stroke-linejoin="bevel" />
+                      <path d="M30.6472 20.2964L9.64722 20.2964" stroke-width="2" stroke-linejoin="bevel" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+      </div>
+
+    </section>
+    <!-- <section class="container mt-5">
+      <h2 class="text-center h3 mt-2 mb-4">Top News</h2>
+      <div class="row extra-margin">
+        <div class="col-sm-3">
+          <a href="news-detail.html">
+            <div class="info-card news-center">
+              <img src="assets/img/CFI-image-for-website-story.jpg" class="card-img-small mb-3" alt="...">
+              <div class="sub-topic-text d-flex justify-content-between align-items-start">
+                <span class="info-card-header">DRCF Publishes Immersive Futures Foresight Paper</span>
+                <svg class="svg-arrow" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20.2449" cy="19.7964" r="19" />
+                  <path d="M22.6774 12.2964L30.8422 20.2964L22.6774 28.2964" stroke-width="2" stroke-linejoin="bevel" />
+                  <path d="M30.6472 20.2964L9.64722 20.2964" stroke-width="2" stroke-linejoin="bevel" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-3">
+          <a href="news-detail.html">
+            <div class="info-card news-center">
+              <img src="assets/img/Kate-Jones-at-AI-Fringe-BL-2-Nov-23.png" class="card-img-small mb-3" alt="...">
+              <div class="sub-topic-text d-flex justify-content-between align-items-start">
+                <span class="info-card-header">DRCF Publishes Immersive Futures Foresight Paper</span>
+                <svg class="svg-arrow" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20.2449" cy="19.7964" r="19" />
+                  <path d="M22.6774 12.2964L30.8422 20.2964L22.6774 28.2964" stroke-width="2" stroke-linejoin="bevel" />
+                  <path d="M30.6472 20.2964L9.64722 20.2964" stroke-width="2" stroke-linejoin="bevel" />
+                </svg>
+              </div>
+            </div>
+          </a>
+
+        </div>
+        <div class="col-sm-3">
+          <a href="news-detail.html">
+            <div class="info-card news-center">
+              <img src="assets/img/Kate-Jones-high-res.jpg" class="card-img-small mb-3" alt="...">
+              <div class="sub-topic-text d-flex justify-content-between align-items-start">
+                <span class="info-card-header">DRCF Publishes Immersive Futures Foresight Paper</span>
+                <svg class="svg-arrow" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20.2449" cy="19.7964" r="19" />
+                  <path d="M22.6774 12.2964L30.8422 20.2964L22.6774 28.2964" stroke-width="2" stroke-linejoin="bevel" />
+                  <path d="M30.6472 20.2964L9.64722 20.2964" stroke-width="2" stroke-linejoin="bevel" />
+                </svg>
+              </div>
+            </div>
+          </a>
+
+        </div>
+        <div class="col-sm-3">
+          <a href="news-detail.html">
+            <div class="info-card news-center">
+              <img src="assets/img/CFI-image-for-website-story.jpg" class="card-img-small mb-3" alt="...">
+              <div class="sub-topic-text d-flex justify-content-between align-items-start">
+                <span class="info-card-header">DRCF Publishes Immersive Futures Foresight Paper</span>
+                <svg class="svg-arrow" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20.2449" cy="19.7964" r="19" />
+                  <path d="M22.6774 12.2964L30.8422 20.2964L22.6774 28.2964" stroke-width="2" stroke-linejoin="bevel" />
+                  <path d="M30.6472 20.2964L9.64722 20.2964" stroke-width="2" stroke-linejoin="bevel" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section>
+      <div class="row g-0 mtop-5">
+        <div class="col-12">
+          <div class="row row-cols-auto g-0 multicolor-strip">
+            <div class="bg-blue"></div>
+            <div class="bg-megenta"></div>
+            <div class="bg-pink"></div>
+            <div class="bg-yellow"></div>
+            <div class="bg-green"></div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <footer class="footer">
+      <div class="container-xl">
+        <h2 class="visually-hidden text-white">Footer</h2>
+        <div class="row">
+          <div class="col-md-12 col-lg-3">
+            <section class="mt-0 mt-lg-5  social">
+              <h3 class="follow fw-bold">Follow us </h3>
+              <ul class="list-unstyled social-icons">
+                <li class="social-icons-list">
+                  <a class="" href="#" title="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="social-icons-list">
+                  <a class="" href="#" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="social-icons-list">
+                  <a class="" href="#" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </section>
+          </div>
+          <div class="col-md-12 col-lg-3">
+            <section class="mt-0 mt-lg-5  about-ofcom">
+              <h3 class="follow fw-bold">About DRCF </h3>
+              <ul class="list-unstyled">
+                <li class="">
+                  <a class="footer-link" href="#">Key Projects</a>
+                </li>
+                <li class="">
+                  <a class="footer-link" href="#">Research Library</a>
+                </li>
+                <li class="">
+                  <a class="footer-link" href="#">Recruitment</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-md-12 col-lg-3">
+            <section class="mt-0 mt-lg-5 about-ofcom">
+              <h3 class="follow fw-bold">AI and Digital Hub</h3>
+              <ul class="list-unstyled">
+                <li class="">
+                  <a class="footer-link" href="#">Apply Now</a>
+                </li>
+                <li class="">
+                  <a class="footer-link" href="#">Case Study</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-md-12 col-lg-3">
+            <section class="mt-0 mt-lg-5 about-ofcom">
+              <h3 class="follow fw-bold">Aout this website</h3>
+              <ul class="list-unstyled">
+                <li class="">
+                  <a class="footer-link" href="#">Cookies</a>
+                </li>
+                <li class="">
+                  <a class="footer-link" href="#">Privacy Policy</a>
+                </li>
+                <li class="">
+                  <a class="footer-link" href="#">Accessibility</a>
+                </li>
+              </ul>
+            </section>
+          </div>		  
+        </div>
+      </div>
+      <div class="container-xl">
+        <div class="row copyrights ">
+          <div class="copyright-text text-lg-start text-start text-sm-end">© Copyright DRCF All Rights Reserved</div>
+        </div>
+      </div>
+    </footer>	
+	
+    <a class="back-to-top">
+      <i class="fa-solid fa-chevron-up"></i>
+      <span>Back to top</span>
+    </a>
+  </main>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          slidesPerGroup: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+          slidesPerGroup: 3,
+        },
+      },
+    });
+  </script>
+
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
