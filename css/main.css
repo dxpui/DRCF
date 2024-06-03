@@ -2712,6 +2712,7 @@ a:focus .info-card.news-center:before {
     background-color: var(--color-default);
     font-size: 14px !important;
     line-height: 21px;
+    margin-top: 3rem;
 }
 
 .footer .about-ofcom li {
@@ -3873,6 +3874,7 @@ a:focus .info-card.news-center:before {
 .title-block {
     margin: 2px;
     padding: 2px;
+    margin-bottom: 3rem;
 }
 
 /* .title-block .col-md-7, 
@@ -6202,3 +6204,13 @@ blockquote p:has(cite) p::before {
 }
 
 /*********************** About Ofcom page Contact and Case reference section ********************/
+
+.how-we-sub-head-cls {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 37px;
+}
+.how-we-cls i{
+    color:#014D85;
+    font-size: 70px;
+}
