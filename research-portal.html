@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DRCF website</title>
+  <link rel="icon" href="assets/img/favicon-3.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+  <a class="skip-to-content-link" href="#skip" tabindex="0">Skip to main content</a>
+  <!-- header start hare-->
+  <header class="header fixed-top d-flex align-items-center">
+    <a class="skip-to-content-link" href="#skip" tabindex="0">Skip to main content</a>
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto me-lg-0">
+        <a href="index.html"> <img class="brand-logo" src="assets/img/DRCF-logo-WEB.png" alt="DRCF" /></a>
+      </div>
+
+      <!-- menu start here -->
+        <div class="header-item ms-auto">
+        <div class="menu-overlay">
+        </div>
+           <nav class="menu">
+          <div class="mobile-menu-head">
+            <div class="go-back"><i class="fa fa-angle-left"></i></div>
+            <div class="current-menu-title"></div>
+            <div class="mobile-menu-close">×</div>
+          </div>
+          <ul class="menu-main">
+            <li class="menu-item-has-children">
+              <a href="#">About the DRCF</a>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">News & Events</a>            
+			</li>
+            <li class="menu-item-has-children">
+              <a href="#">Publications<i class="fa fa-angle-down"></i></a>
+              <div class="sub-menu mega-menu mega-menu-column-4">
+                <div class="list-item">                  
+                  <ul>
+                    <li><a href="#">Blogs & Articles</a></li>
+                    <li><a href="#">Papers</a></li>
+                    <li><a href="#">Joint Statements</a></li>
+                    <li><a href="#">Annual Reports</a></li>
+                    <li><a href="#">Workplans</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <ul>
+                    <li class="mb-3"><span class="detail-text">
+                        Optional explanatory text here and quick links to popular or topical content. <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur.</span></li>
+                  </ul>
+                </div>             
+			  </div>
+            </li>
+			
+            <li class="menu-item-has-children">
+              <a href="#">AI and Digital Hub<i class="fa fa-angle-down"></i></a>
+              <div class="sub-menu mega-menu mega-menu-column-4">               
+                <div class="list-item">                  
+                  <ul>
+                    <li><a href="#">Apply Now</a></li>
+                    <li><a href="#">Case Study</a></li>
+                  </ul>
+                </div>			
+			  </div>
+            </li>
+			
+	        <li class="menu-item-has-children">
+              <a href="#">More<i class="fa fa-angle-down"></i></a>
+              <div class="sub-menu mega-menu mega-menu-column-4">               
+                <div class="list-item">                  
+                  <ul>
+                    <li><a href="projects.html">Key Projects</a></li>
+                    <li><a href="#">Research Library</a></li>
+                    <li><a href="#">Recruitment</a></li>
+                  </ul>
+                </div>			
+			  </div>
+            </li>		
+          </ul>
+        </nav>
+     
+	  </div>     
+	 <!-- menu end here -->
+	 
+	 <div class="search-icons d-flex align-items-center order-2 order-lg-1">
+        <i class="fas fa-search" id="search-icon"></i>
+      </div>
+	  
+       <form action="" class="search-form">
+        <div class="search-box mx-auto mb-3 position-relative">
+          <input type="search" class="search-box-input" name="query" aria-label="Global Search" placeholder="What are you looking for?" id="globalquery" autocomplete="off">
+          <label for="globalquery" class="fas fa-search d-none"><span class="d-none">Search</span></label>
+          <a href="javascript:void(0)" class="fas fa-search gl-search" onclick="globalSearch()"><span class="d-none">Search</span></a>
+        </div>
+	  </form>	  
+
+      <!-- mobile menu trigger -->
+      <div class="mobile-menu-trigger order-3 order-lg-2">
+        <i class="mobile-nav-toggle mobile-nav-show fa-solid fa-bars"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none fa-solid fa-xmark"></i>
+      </div>
+    </div>
+  </header>
+  
+ <main>
+<main role="main">
+        
+
+<section class="breadcrumb-position">
+   <div class="row">
+      <div class="col-12">
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+               <li class="breadcrumb-item"><a href="/" aria-expanded="false">Home</a></li>
+               <li class="breadcrumb-item active ellipsis" aria-current="page"><span>Research Portal</span></li>
+            </ol>
+         </nav>
+      </div>
+   </div>
+</section>
+<section>
+  
+<div class="row g-0">
+ <div class="col-md-12">
+	<div class="blue-bg h-100 pt-5 pb-4 px-4">
+	   <div class="row">
+		  <div class="col-md-10 mx-auto">
+			 <h1 id="skipToContent" class="text-center mb-4" data-epi-type="title">Research Portal</h1>
+		  </div>
+	   </div>
+	</div>
+ </div>
+</div>
+</section>
+
+      <section>
+      <div class="container-fluid">
+        
+        <div class="row mt-5">
+          <div class="col-lg-2 order-lg-0 order-2 mt-lg-0 mt-4">
+          </div>
+          <div class="col-lg-8">
+           <div class="news-cls"><h1></h1></div><div><p paraid="1336233556" paraeid="{45e70601-d7c1-4a4d-a72f-19a54ae0f242}{180}">The DRCF Research Library collates and links to research about digital markets and regulation carried out by our four member regulators: the Financial Conduct Authority (FCA), the Information Commissioner's Office (ICO), the Competition and Markets Authority (CMA) and Ofcom.&nbsp;&nbsp;Recent DRCF research papers can be found on our <a href="https://www.drcf.org.uk/publications">publications page</a>, along with joint papers and blogs.</p><p><em><strong>This Research Library will be updated on a regular basis, so why not bookmark the page for a useful resource.</strong></em></p><p><strong><a href="https://www.gov.uk/find-digital-market-research/music-and-streaming-market-study-update-executive-summary-2022-cma">Music and streaming market study update: Executive Summary 2022 (CMA)</a> </strong></p><p>- Research area: Future connectivity and internet and 2 others - Topic: Digital economy and 2 others&nbsp;&nbsp;- Published: <time datetime="2022-07-26" style="border: none">26 July 2022</time></p><p><time datetime="2022-07-26" style="border: none"><strong><a data-ga4-ecommerce-path="/find-digital-market-research/object-based-media-report-2021-ofcom" data-ecommerce-path="/find-digital-market-research/object-based-media-report-2021-ofcom" data-ecommerce-row="1" data-ecommerce-index="6" data-track-category="navFinderLinkClicked" data-track-action="Digital Regulation Cooperation Forum digital markets research.6" data-track-label="/find-digital-market-research/object-based-media-report-2021-ofcom" data-track-options="{&quot;dimension28&quot;:50,&quot;dimension29&quot;:&quot;Object-based media report 2021 (OFCOM)&quot;}" href="https://www.gov.uk/find-digital-market-research/object-based-media-report-2021-ofcom" style="border: none">Object-based media report 2021 (Ofcom)</a></strong></time></p></div><p>- Research area: Advertising and marketing and 2 others - Topic: Adtech and 2 others&nbsp;&nbsp;- Published:&nbsp;<time datetime="2021-09-05" style="border: none">5 September 2021</time></p><p><time datetime="2021-09-05" style="border: none"><a data-ga4-ecommerce-path="/find-digital-market-research/quantum-communications-new-potential-for-the-future-of-communications-executive-summary-2021-ofcom" data-ecommerce-path="/find-digital-market-research/quantum-communications-new-potential-for-the-future-of-communications-executive-summary-2021-ofcom" data-ecommerce-row="1" data-ecommerce-index="7" data-track-category="navFinderLinkClicked" data-track-action="Digital Regulation Cooperation Forum digital markets research.7" data-track-label="/find-digital-market-research/quantum-communications-new-potential-for-the-future-of-communications-executive-summary-2021-ofcom" data-track-options="{&quot;dimension28&quot;:50,&quot;dimension29&quot;:&quot;Quantum Communications: new potential for the future of communications: Executive Summary 2021 (OFCOM)&quot;}" href="https://www.gov.uk/find-digital-market-research/quantum-communications-new-potential-for-the-future-of-communications-executive-summary-2021-ofcom" style="border: none"><strong>Quantum Communications: new potential for the future of communications: Executive Summary 2021 (Ofcom)</strong></a></time></p><p>- Research area: Technology - Topic: Cloud computing and 2 others&nbsp;&nbsp;- Published:&nbsp;<time datetime="2021-07-28" style="border: none">28 July 2021</time></p><p><time datetime="2021-07-28" style="border: none"><strong><a data-ga4-ecommerce-path="/find-digital-market-research/evidence-review-of-online-choice-architecture-and-consumer-and-competition-harm-2022-cma" data-ecommerce-path="/find-digital-market-research/evidence-review-of-online-choice-architecture-and-consumer-and-competition-harm-2022-cma" data-ecommerce-row="1" data-ecommerce-index="8" data-track-category="navFinderLinkClicked" data-track-action="Digital Regulation Cooperation Forum digital markets research.8" data-track-label="/find-digital-market-research/evidence-review-of-online-choice-architecture-and-consumer-and-competition-harm-2022-cma" data-track-options="{&quot;dimension28&quot;:50,&quot;dimension29&quot;:&quot;Evidence review of Online Choice Architecture and consumer and competition harm 2022 (CMA)&quot;}" href="https://www.gov.uk/find-digital-market-research/evidence-review-of-online-choice-architecture-and-consumer-and-competition-harm-2022-cma" style="border: none">Evidence review of Online Choice Architecture and consumer and competition harm 2022 (CMA)</a></strong></time></p><p>- Research area: Technology Future connectivity and internet and 1 other - Topic: Digital economy and 3 others</p><p>- Published: 5 May 2022</p><p><strong><a data-ga4-ecommerce-path="/find-digital-market-research/online-choice-architecture-how-digital-design-can-harm-competition-and-consumers-2022-cma" data-ecommerce-path="/find-digital-market-research/online-choice-architecture-how-digital-design-can-harm-competition-and-consumers-2022-cma" data-ecommerce-row="1" data-ecommerce-index="9" data-track-category="navFinderLinkClicked" data-track-action="Digital Regulation Cooperation Forum digital markets research.9" data-track-label="/find-digital-market-research/online-choice-architecture-how-digital-design-can-harm-competition-and-consumers-2022-cma" data-track-options="{&quot;dimension28&quot;:50,&quot;dimension29&quot;:&quot;Online Choice Architecture: How digital design can harm competition and consumers 2022 (CMA)&quot;}" href="https://www.gov.uk/find-digital-market-research/online-choice-architecture-how-digital-design-can-harm-competition-and-consumers-2022-cma" style="border: none">Online Choice Architecture: How digital design can harm competition and consumers 2022 (CMA)</a></strong></p><p>- Research area: Future connectivity and internet and 1 other - Topic: Digital economy and 2 others</p><p>- Published: 5 May 2022</p><p><strong><a data-ga4-ecommerce-path="/find-digital-market-research/the-technology-led-transformation-of-competition-and-consumer-agencies-2022-cma" data-ecommerce-path="/find-digital-market-research/the-technology-led-transformation-of-competition-and-consumer-agencies-2022-cma" data-ecommerce-row="1" data-ecommerce-index="10" data-track-category="navFinderLinkClicked" data-track-action="Digital Regulation Cooperation Forum digital markets research.10" data-track-label="/find-digital-market-research/the-technology-led-transformation-of-competition-and-consumer-agencies-2022-cma" data-track-options="{&quot;dimension28&quot;:50,&quot;dimension29&quot;:&quot;The technology-led transformation of competition and consumer agencies 2022 (CMA)&quot;}" href="https://www.gov.uk/find-digital-market-research/the-technology-led-transformation-of-competition-and-consumer-agencies-2022-cma" style="border: none">The technology-led transformation of competition and consumer agencies 2022 (CMA)</a></strong></p><p>- Research area: Future connectivity and internet and 1 other - Topic: Digital economy and 1 other</p><p>- Published 14 June 2022</p><p><strong><a data-ga4-ecommerce-path="/find-digital-market-research/mobile-ecosystems-market-study-appendix-g-pre-installation-default-settings-and-choice-architecture-for-mobile-browsers-2022-cma" data-ecommerce-path="/find-digital-market-research/mobile-ecosystems-market-study-appendix-g-pre-installation-default-settings-and-choice-architecture-for-mobile-browsers-2022-cma" data-ecommerce-row="1" data-ecommerce-index="11" data-track-category="navFinderLinkClicked" data-track-action="Digital Regulation Cooperation Forum digital markets research.11" data-track-label="/find-digital-market-research/mobile-ecosystems-market-study-appendix-g-pre-installation-default-settings-and-choice-architecture-for-mobile-browsers-2022-cma" data-track-options="{&quot;dimension28&quot;:50,&quot;dimension29&quot;:&quot;Mobile Ecosystems Market Study: Appendix G - pre-installation, default settings and choice architecture for mobile browsers 2022 (CMA)&quot;}" href="https://www.gov.uk/find-digital-market-research/mobile-ecosystems-market-study-appendix-g-pre-installation-default-settings-and-choice-architecture-for-mobile-browsers-2022-cma" style="border: none">Mobile Ecosystems Market Study: Appendix G - pre-installation, default settings and choice architecture for mobile browsers 2022 (CMA)</a></strong></p><p>- Research area:&nbsp;Advertising and marketing and 2 others - Topic: Adtech and 5 others</p><p>- Published 10 June 2022</p><p><strong><a data-ga4-ecommerce-path="/find-digital-market-research/mobile-ecosystems-market-study-appendix-h-apples-and-googles-in-app-purchase-rules-2022-cma" data-ecommerce-path="/find-digital-market-research/mobile-ecosystems-market-study-appendix-h-apples-and-googles-in-app-purchase-rules-2022-cma" data-ecommerce-row="1" data-ecommerce-index="12" data-track-category="navFinderLinkClicked" data-track-action="Digital Regulation Cooperation Forum digital markets research.12" data-track-label="/find-digital-market-research/mobile-ecosystems-market-study-appendix-h-apples-and-googles-in-app-purchase-rules-2022-cma" data-track-options="{&quot;dimension28&quot;:50,&quot;dimension29&quot;:&quot;Mobile Ecosystems Market Study: Appendix H - Apple's and Google's in-app purchase rules 2022 (CMA)&quot;}" href="https://www.gov.uk/find-digital-market-research/mobile-ecosystems-market-study-appendix-h-apples-and-googles-in-app-purchase-rules-2022-cma" style="border: none">Mobile Ecosystems Market Study: Appendix H - Apple's and Google's in-app purchase rules 2022 (CMA)Category: Ad hoc research</a></strong></p><p>- Research area:&nbsp;Advertising and marketing and 2 others - Topic: Adtech and 3 others</p><p>- Published 10 June 2022</p><p><strong><a data-ga4-ecommerce-path="/find-digital-market-research/mobile-ecosystems-market-study-appendix-i-apples-restrictions-on-cloud-gaming-2022-cma" data-ecommerce-path="/find-digital-market-research/mobile-ecosystems-market-study-appendix-i-apples-restrictions-on-cloud-gaming-2022-cma" data-ecommerce-row="1" data-ecommerce-index="13" data-track-category="navFinderLinkClicked" data-track-action="Digital Regulation Cooperation Forum digital markets research.13" data-track-label="/find-digital-market-research/mobile-ecosystems-market-study-appendix-i-apples-restrictions-on-cloud-gaming-2022-cma" data-track-options="{&quot;dimension28&quot;:50,&quot;dimension29&quot;:&quot;Mobile Ecosystems Market Study: Appendix I - Apple's restrictions on cloud gaming 2022 (CMA)&quot;}" href="https://www.gov.uk/find-digital-market-research/mobile-ecosystems-market-study-appendix-i-apples-restrictions-on-cloud-gaming-2022-cma" style="border: none">Mobile Ecosystems Market Study: Appendix I - Apple's restrictions on cloud gaming 2022 (CMA)</a></strong></p><p>- Research area:&nbsp;Future connectivity and internet and 2 others - Topic:&nbsp;Cloud computing and 4 others</p><p>- Published 10 June 2022</p><p><strong><a data-ga4-ecommerce-path="/find-digital-market-research/mobile-ecosystems-market-study-appendix-j-apples-and-googles-privacy-changes-2022-cma" data-ecommerce-path="/find-digital-market-research/mobile-ecosystems-market-study-appendix-j-apples-and-googles-privacy-changes-2022-cma" data-ecommerce-row="1" data-ecommerce-index="14" data-track-category="navFinderLinkClicked" data-track-action="Digital Regulation Cooperation Forum digital markets research.14" data-track-label="/find-digital-market-research/mobile-ecosystems-market-study-appendix-j-apples-and-googles-privacy-changes-2022-cma" data-track-options="{&quot;dimension28&quot;:50,&quot;dimension29&quot;:&quot;Mobile Ecosystems Market Study: Appendix J - Apple's and Google's privacy changes 2022 (CMA)&quot;}" href="https://www.gov.uk/find-digital-market-research/mobile-ecosystems-market-study-appendix-j-apples-and-googles-privacy-changes-2022-cma" style="border: none">Mobile Ecosystems Market Study: Appendix J - Apple's and Google's privacy changes 2022 (CMA)</a></strong></p><p>- Research area:&nbsp;Advertising and marketing and 3 others - Topic:&nbsp;Adtech and 10 others</p><p>- Published 10 June 2022</p><p><strong><a data-ga4-ecommerce-path="/find-digital-market-research/mobile-ecosystems-market-study-appendix-k-consumer-experiences-of-app-purchases-and-auto-renewing-subscriptions-to-apps-sold-through-app-stores-2022-cma" data-ecommerce-path="/find-digital-market-research/mobile-ecosystems-market-study-appendix-k-consumer-experiences-of-app-purchases-and-auto-renewing-subscriptions-to-apps-sold-through-app-stores-2022-cma" data-ecommerce-row="1" data-ecommerce-index="15" data-track-category="navFinderLinkClicked" data-track-action="Digital Regulation Cooperation Forum digital markets research.15" data-track-label="/find-digital-market-research/mobile-ecosystems-market-study-appendix-k-consumer-experiences-of-app-purchases-and-auto-renewing-subscriptions-to-apps-sold-through-app-stores-2022-cma" data-track-options="{&quot;dimension28&quot;:50,&quot;dimension29&quot;:&quot;Mobile Ecosystems Market Study: Appendix K - consumer experiences of app purchases and auto-renewing subscriptions to apps sold through app stores 2022 (CMA)&quot;}" href="https://www.gov.uk/find-digital-market-research/mobile-ecosystems-market-study-appendix-k-consumer-experiences-of-app-purchases-and-auto-renewing-subscriptions-to-apps-sold-through-app-stores-2022-cma" style="border: none">Mobile Ecosystems Market Study: Appendix K - consumer experiences of app purchases and auto-renewing subscriptions to apps sold through app stores 2022 (CMA)</a></strong></p><p>- Research area:&nbsp;Future connectivity and internet and 1 other - Topic:&nbsp;Digital economy and 4 others</p><p>- Published 10 June 2022</p>       
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+      </div>
+    </section>
+
+<footer class="footer">
+  <div class="container-xl">
+	<h2 class="visually-hidden text-white">Footer</h2>
+	<div class="row">
+	  <div class="col-md-12 col-lg-3">
+		<section class="mt-0 mt-lg-5  social">
+		  <h3 class="follow fw-bold">Follow us </h3>
+		  <ul class="list-unstyled social-icons">
+			<li class="social-icons-list">
+			  <a class="" href="#" title="Twitter">
+				<i class="fa-brands fa-twitter"></i>
+			  </a>
+			</li>
+			<li class="social-icons-list">
+			  <a class="" href="#" title="Facebook">
+				<i class="fa-brands fa-facebook-f"></i>
+			  </a>
+			</li>
+			<li class="social-icons-list">
+			  <a class="" href="#" title="LinkedIn">
+				<i class="fa-brands fa-linkedin"></i>
+			  </a>
+			</li>
+		  </ul>
+
+		</section>
+	  </div>
+	  <div class="col-md-12 col-lg-3">
+		<section class="mt-0 mt-lg-5  about-ofcom">
+		  <h3 class="follow fw-bold">About DRCF </h3>
+		  <ul class="list-unstyled">
+			<li class="">
+			  <a class="footer-link" href="#">Key Projects</a>
+			</li>
+			<li class="">
+			  <a class="footer-link" href="#">Research Library</a>
+			</li>
+			<li class="">
+			  <a class="footer-link" href="#">Recruitment</a>
+			</li>
+		  </ul>
+		</section>
+	  </div>
+	  <div class="col-md-12 col-lg-3">
+		<section class="mt-0 mt-lg-5 about-ofcom">
+		  <h3 class="follow fw-bold">AI and Digital Hub</h3>
+		  <ul class="list-unstyled">
+			<li class="">
+			  <a class="footer-link" href="#">Apply Now</a>
+			</li>
+			<li class="">
+			  <a class="footer-link" href="#">Case Study</a>
+			</li>
+		  </ul>
+		</section>
+	  </div>
+	  <div class="col-md-12 col-lg-3">
+		<section class="mt-0 mt-lg-5 about-ofcom">
+		  <h3 class="follow fw-bold">Aout this website</h3>
+		  <ul class="list-unstyled">
+			<li class="">
+			  <a class="footer-link" href="#">Cookies</a>
+			</li>
+			<li class="">
+			  <a class="footer-link" href="#">Privacy Policy</a>
+			</li>
+		  </ul>
+		</section>
+	  </div>		  
+	</div>
+  </div>
+  <div class="container-xl">
+	<div class="row copyrights ">
+	  <div class="copyright-text text-lg-start text-start text-sm-end">© Copyright DRCF All Rights Reserved</div>
+	</div>
+  </div>
+</footer>	
+	
+    <a class="back-to-top">
+      <i class="fa-solid fa-chevron-up"></i>
+      <span>Back to top</span>
+    </a>
+  </main>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
