@@ -1141,6 +1141,7 @@ header .search-box {
     text-transform: capitalize;
     width: 100%;
 }
+
 .header .menu>ul>li .sub-menu>ul>li>a:hover {
     background-color: var(--color-secondary);
     color: var(--color-default);
@@ -6210,7 +6211,12 @@ blockquote p:has(cite) p::before {
     font-weight: 600;
     line-height: 37px;
 }
-.how-we-cls i{
-    color:#014D85;
+
+.how-we-cls i {
+    color: #014D85;
     font-size: 70px;
+}
+
+.banner-full-img img{
+    aspect-ratio: 10/3;
 }
