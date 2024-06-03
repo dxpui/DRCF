@@ -3875,10 +3875,10 @@ a:focus .info-card.news-center:before {
     padding: 2px;
 }
 
-.title-block .col-md-7, 
+/* .title-block .col-md-7, 
 .title-block .col-md-5{
     width: 100%;
-}
+} */
 
 .title-block .title-block-img {
     width: 100%;
