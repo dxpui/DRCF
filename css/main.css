@@ -6227,3 +6227,18 @@ blockquote p:has(cite) p::before {
 .m-top-2{
     margin-top: -3rem;
 }
+
+.m-top-2{
+    margin-top: -2rem;
+}
+
+.reports-link {
+    color: #014D85;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.reports-link:hover {
+    color: var(--bs-link-hover-color);
+}
