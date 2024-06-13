@@ -6232,6 +6232,9 @@ blockquote p:has(cite) p::before {
     margin-top: -2rem;
 }
 
+.m-top-1{
+    margin-top: 1rem;
+}
 .reports-link {
     color: #014D85;
     font-size: 16px;
@@ -6241,4 +6244,8 @@ blockquote p:has(cite) p::before {
 
 .reports-link:hover {
     color: var(--bs-link-hover-color);
+}
+
+.color-default{
+    color: var(--color-default) !important;
 }

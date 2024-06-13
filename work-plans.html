@@ -19,6 +19,15 @@
   <link href="css/main.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <style>
+  .papers-bg{
+    background-color: #F5F5F5;
+    background-clip: content-box;
+}
+.papers-bg span{
+  bottom:11px; 
+}
+  </style>
 
 </head>
 
@@ -34,7 +43,7 @@
       </div>
 
       <!-- menu start here -->
-      <div class="header-item ms-auto">
+        <div class="header-item ms-auto">
         <div class="menu-overlay">
         </div>
         <nav class="menu">
@@ -48,14 +57,14 @@
               <a href="about-DRCF.html">About the DRCF</a>
             </li>
             <li class="menu-item-has-children">
-              <a href="news-and-events.html">News & Events</a>
-            </li>
+              <a href="news-and-events.html">News & Events</a>            
+			</li>
             <li class="menu-item-has-children">
               <a href="#">Publications<i class="fa fa-angle-down"></i></a>
               <div class="sub-menu mega-menu mega-menu-column-4">
-                <div class="list-item">
+                <div class="list-item">                  
                   <ul>
-                    <li><a href="blogs.html">Blogs & Articles</a></li>
+                    <li><a href="#">Blogs & Articles</a></li>
                     <li><a href="#">Papers</a></li>
                     <li><a href="#">Joint Statements</a></li>
                     <li><a href="#">Annual Reports</a></li>
@@ -68,56 +77,52 @@
                     <li class="mb-3"><span class="detail-text">
                         Optional explanatory text here and quick links to popular or topical content. <br>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur.</span>
-                    </li>
+                        labore. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur.</span></li>
                   </ul>
-                </div>
-              </div>
+                </div>             
+			  </div>
             </li>
-
+			
             <li class="menu-item-has-children">
               <a href="#">AI and Digital Hub<i class="fa fa-angle-down"></i></a>
-              <div class="sub-menu mega-menu mega-menu-column-4">
-                <div class="list-item">
+              <div class="sub-menu mega-menu mega-menu-column-4">               
+                <div class="list-item">                  
                   <ul>
                     <li><a href="#">Apply Now</a></li>
                     <li><a href="#">Case Study</a></li>
                   </ul>
-                </div>
-              </div>
+                </div>			
+			  </div>
             </li>
-
-            <li class="menu-item-has-children">
+			
+	        <li class="menu-item-has-children">
               <a href="#">More<i class="fa fa-angle-down"></i></a>
-              <div class="sub-menu mega-menu mega-menu-column-4">
-                <div class="list-item">
+              <div class="sub-menu mega-menu mega-menu-column-4">               
+                <div class="list-item">                  
                   <ul>
                     <li><a href="projects.html">Key Projects</a></li>
                     <li><a href="#">Research Library</a></li>
                     <li><a href="#">Recruitment</a></li>
                   </ul>
-                </div>
-              </div>
-            </li>
+                </div>			
+			  </div>
+            </li>		
           </ul>
         </nav>
-
-      </div>
-      <!-- menu end here -->
-
-      <div class="search-icons d-flex align-items-center order-2 order-lg-1">
+      </div>     
+	 <!-- menu end here -->
+	 
+	 <div class="search-icons d-flex align-items-center order-2 order-lg-1">
         <i class="fas fa-search" id="search-icon"></i>
       </div>
-
-      <form action="" class="search-form">
+	  
+       <form action="" class="search-form">
         <div class="search-box mx-auto mb-3 position-relative">
-          <input type="search" class="search-box-input" name="query" aria-label="Global Search"
-            placeholder="What are you looking for?" id="globalquery" autocomplete="off">
+          <input type="search" class="search-box-input" name="query" aria-label="Global Search" placeholder="What are you looking for?" id="globalquery" autocomplete="off">
           <label for="globalquery" class="fas fa-search d-none"><span class="d-none">Search</span></label>
-          <a href="javascript:void(0)" class="fas fa-search gl-search" onclick="globalSearch()"><span
-              class="d-none">Search</span></a>
+          <a href="javascript:void(0)" class="fas fa-search gl-search" onclick="globalSearch()"><span class="d-none">Search</span></a>
         </div>
-      </form>
+	  </form>	  
 
       <!-- mobile menu trigger -->
       <div class="mobile-menu-trigger order-3 order-lg-2">
@@ -126,123 +131,150 @@
       </div>
     </div>
   </header>
-  <main>
+ 
+ <main>
     <div id="skip" class="visually-hidden">Home page features</div>
-
-    <section class="breadcrumb-position">
-      <div class="row">
-        <div class="col-12">
-          <nav aria-label="breadcrumb">
+	
+	<section class="breadcrumb-position">
+   <div class="row">
+      <div class="col-12">
+         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item ellipsis"><a href="#">Workplans</a></li>
+               <li class="breadcrumb-item"><a href="/" aria-expanded="false">Home</a></li>
+               <li class="breadcrumb-item active ellipsis" aria-current="page"><span>Workplans</span></li>
             </ol>
-          </nav>
-        </div>
+         </nav>
       </div>
-    </section>
-    <section>
-      <div class="hero-banner-narrow blue-bg">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-8 offset-lg-4">
-              <h1 id="skipToContent" data-epi-type="title"><strong>Workplans</strong></h1>
+   </div>
+</section>
+	
+	<section>
+	   <div class="hero-banner-narrow blue-bg">
+		  <div class="container-fluid">
+			 <div class="row">
+				<div class="col-lg-8 offset-lg-4">
+				   <h1 id="skipToContent" data-epi-type="title"><strong>WORKPLANS</strong></h1>
+				</div>
+			 </div>
+		  </div>
+	   </div>
+	</section>	
+
+    <section class="container-xl mt-5 mb-4">
+      <h2 class="text-left mb-4">WORKPLANS</h2>	
+      <div class="row">  
+          <div class="">
+		    <div class="row g-3">			
+				<div class="col-12">
+				   <div class="papers-bg p-2">
+					  <div class="text-end p-2 ">17 April 2024</div>
+					  <div class="p-2">
+						 <div class="text-decoration-none"><a href="#" class="text-decoration-none papers-sub-head p-2 color-default">DRCF Workplan 2024/25</a></div>
+					  </div>
+					  <div class="text-black p-2">
+              The fourth DRCF Workplan sets out our three-year vision and key areas of focus for 2024/25. We have also published a&nbsp;<a class="color-default" href="https://www.drcf.org.uk/__data/assets/pdf_file/0024/283164/DRCF-Call-for-Input-Response.pdf">response</a> to the key themes raised in the Call for Input which we carried out between November and December 2023. You can read a Welsh translation of both documents <a href="https://www.drcf.org.uk/__data/assets/pdf_file/0023/283163/Cynllun-Gwaith-202425-Ymateb-i-Gais-am-Fewnbwn.pdf" class="color-default">here</a>.
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container">
-      <h3 class="text-center my-5"></h3>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row teaser-3 extra-margin">
-            <div class="col">
-              <a href="paper-detail.html">
-                <div class="info-card">
-                  <div class="d-flex justify-content-between align-items-start align-items-center">
-                    <span class="info-card-header">DRCF Workplan 2024/25</span>
-                    <img class="icon-arrow" src="assets/img/web-icons/Arrow circle.svg" alt="">
-                    <img class="icon-arrow-hover" src="assets/img/web-icons/Arrow circle fill.svg" alt="">
-                  </div>
-              </a>
-              <p>
-                <small>17 April 2024</small>
-              </p>
-              <p>The fourth DRCF Workplan sets out our three-year vision and key areas of focus for 2024/25. We have
-                also published a&nbsp;<a
-                  href="https://www.drcf.org.uk/__data/assets/pdf_file/0024/283164/DRCF-Call-for-Input-Response.pdf">response</a>
-                to the key themes raised in the Call for Input which we carried out between November and December 2023.
-                You can read a Welsh translation of both documents <a
-                  href="https://www.drcf.org.uk/__data/assets/pdf_file/0023/283163/Cynllun-Gwaith-202425-Ymateb-i-Gais-am-Fewnbwn.pdf">here</a>.
-              </p>
-
-            </div>
-            <span class="p-2 position-absolute m-top-2">
-              <a href="https://www.drcf.org.uk/__data/assets/pdf_file/0030/283188/DRCF-Workplan-202425.pdf"
-                class="text-decoration-none reports-link" target="_blank">
-                DRCF Workplan 202425.pdf
-
-              </a><span class="ms-5">338.5 KB</span>
-            </span>
-          </div>
-          <div class="col">
-            <a href="paper-detail.html">
-              <div class="info-card">
-                <div class="d-flex justify-content-between align-items-start align-items-center">
-                  <span class="info-card-header">DRCF Workplan 2023/24</span>
-                  <img class="icon-arrow" src="assets/img/web-icons/Arrow circle.svg" alt="">
-                  <img class="icon-arrow-hover" src="assets/img/web-icons/Arrow circle fill.svg" alt="">
+					  <div class="col-12 mx-auto">
+						 <a class="file-download" href="https://www.drcf.org.uk/__data/assets/pdf_file/0030/283188/DRCF-Workplan-202425.pdf" class="text-decoration-none reports-link">
+							<div class="rounded-pill pdfdownload text-center mb-3 py-4 px-5">
+							   <img src="assets/img/web-icons/Download.svg" class="me-3" alt="Download">
+							   <div>
+								  <span> DRCF Workplan 202425 </span>
+								  <span class="mx-2">•</span>
+								  <span> PDF </span>
+								  <span class="mx-2">•</span>
+								  <span> 338.5 KB </span>
+							   </div>
+							</div>
+						 </a>
+					  </div>
+				   </div>
+				</div>				
+  
+				<div class="col-12">
+				   <div class="papers-bg p-2">
+					  <div class="text-end p-2">
+						 28 April 2023
+					  </div>
+					  <div class="p-2">
+						 <div class="text-decoration-none"><a href="#" class="text-decoration-none papers-sub-head p-2 color-default">DRCF Workplan 2023/24</a></div>
+					  </div>
+					  <!--  -->
+					  <div class="text-black p-2">The third DRCF workplan sets out our key areas of focus for 2023/24. To help us identify these, we issued a Call for Input. The responses we received are set out here, in alphabetical order by stakeholder - (<u><a href="https://www.drcf.org.uk/__data/assets/pdf_file/0031/260689/Call-for-Input-FINAL-A-C.pdf" target="_blank" class="color-default">A-C</a></u>, <u><a href="https://www.drcf.org.uk/__data/assets/pdf_file/0023/260690/Call-for-Input-FINAL-D-N.pdf" target="_blank" class="color-default">D-N</a></u>, <u><a href="https://www.drcf.org.uk/__data/assets/pdf_file/0024/260691/Call-for-Input-FINAL-O-Z.pdf" target="_blank" class="color-default">O-Y</a></u>). You can read the Welsh translation of the workplan <u><a href="https://www.drcf.org.uk/__data/assets/pdf_file/0022/260707/DRCF-Workplan-2023-24-Welsh-translation.pdf" target="_blank" class="color-default">here</a></u>.</div>
+				  
+					  <div class="col-12 mx-auto">
+						 <a class="file-download" href="https://www.drcf.org.uk/__data/assets/pdf_file/0018/260712/DRCF-Workplan-2023-24.pdf" class="text-decoration-none reports-link">
+							<div class="rounded-pill pdfdownload text-center mb-3 py-4 px-5">
+							   <img src="assets/img/web-icons/Download.svg" class="me-3" alt="Download">
+							   <div>
+								  <span>DRCF Workplan 2023 24 </span>
+								  <span class="mx-2">•</span>
+								  <span> PDF </span>
+								  <span class="mx-2">•</span>
+								  <span> 1.2 MB</span>
+							   </div>
+							</div>
+						 </a>
+					  </div>					  
+				   </div>
+				</div> 
+        <div class="col-12">
+          <div class="papers-bg p-2">
+           <div class="text-end p-2">
+            27 April 2023
+           </div>
+           <div class="p-2">
+            <div class="text-decoration-none"><a href="#" class="text-decoration-none papers-sub-head p-2 color-default">DRCF Workplan 2021/22</a></div>
+           </div>
+           <!--  -->
+           <div class="text-black p-2">The DRCF published its first annual workplan, outlining how the member regulators intended to work together and its initial priorities.</div>
+         
+           <div class="col-12 mx-auto">
+            <a class="file-download" href="https://www.drcf.org.uk/__data/assets/pdf_file/0020/259103/drcf-workplan2122.pdf">
+             <div class="rounded-pill pdfdownload text-center mb-3 py-4 px-5">
+                <img src="assets/img/web-icons/Download.svg" class="me-3" alt="Download">
+                <div>
+                 <span>Work Plan 21/22  </span>
+                 <span class="mx-2">•</span>
+                 <span> PDF </span>
+                 <span class="mx-2">•</span>
+                 <span> 466.2 KB</span>
                 </div>
-              </a>
-                <p>
-                  <small> 28 April 2023</small>
-                </p>
-             
-                <p>The third DRCF workplan sets out our key areas of focus for 2023/24.
-                   To help us identify these, we issued a Call for Input. 
-                   key themes raised in the Call for Input which 
-                   The responses we received are set out here, in alphabetical order by stakeholder - (<u><a href="https://www.drcf.org.uk/__data/assets/pdf_file/0031/260689/Call-for-Input-FINAL-A-C.pdf" target="_blank">A-C</a></u>, <u><a href="https://www.drcf.org.uk/__data/assets/pdf_file/0023/260690/Call-for-Input-FINAL-D-N.pdf" target="_blank">D-N</a></u>, <u><a href="https://www.drcf.org.uk/__data/assets/pdf_file/0024/260691/Call-for-Input-FINAL-O-Z.pdf" target="_blank">O-Y</a></u>). You can read the Welsh translation of the workplan <u><a href="https://www.drcf.org.uk/__data/assets/pdf_file/0022/260707/DRCF-Workplan-2023-24-Welsh-translation.pdf" target="_blank">here</a></u>.</p>
-
-              </div>
-              <span class="p-2 position-absolute m-top-2">
-                <a href="https://www.drcf.org.uk/__data/assets/pdf_file/0018/260712/DRCF-Workplan-2023-24.pdf" class="text-decoration-none reports-link" target="_blank">
-                    DRCF Workplan 2023 24.pdf 
-                    
-                </a><span class="ms-5">1.2 MB</span>
-                </span>
+             </div>
+            </a>
+           </div>					  
           </div>
-          <div class="col">
-            <a href="paper-detail.html">
-              <div class="info-card">
-                <div class="d-flex justify-content-between align-items-start align-items-center">
-                  <span class="info-card-header">DRCF Workplan 2021/22</span>
-                  <img class="icon-arrow" src="assets/img/web-icons/Arrow circle.svg" alt="">
-                  <img class="icon-arrow-hover" src="assets/img/web-icons/Arrow circle fill.svg" alt="">
-                </div>
-              </a>
-                <p>
-                  <small>27 April 2023</small>
-                </p>
-                <p>
-                  The DRCF published its first annual workplan, 
-                  key themes raised in the Call for Input which we carried out between November and December in the Call
-                  published its first annual workplan
-                  outlining how the member regulators intended to work together and its initial priorities.
-                </p>
-
+       </div>  
+       <div class="col-12">
+        <div class="papers-bg p-2">
+         <div class="text-end p-2">
+          27 April 2023
+         </div>
+         <div class="p-2">
+          <div class="text-decoration-none"><a href="#" class="text-decoration-none papers-sub-head p-2 color-default">DRCF Workplan 2022/23</a></div>
+         </div>
+         <!--  -->
+         <div class="text-black p-2">The DRCF’s second workplan outlined the DRCF’s key workstreams to tackle significant digital challenges, including protecting children online; promoting competition and privacy in online advertising; supporting improvements in algorithmic transparency and enabling innovation in the industries we regulate.</div>
+       
+         <div class="col-12 mx-auto">
+          <a class="file-download" href="https://www.drcf.org.uk/__data/assets/pdf_file/0021/259104/DRCF-Annual-Workplan22_23.pdf">
+           <div class="rounded-pill pdfdownload text-center mb-3 py-4 px-5">
+              <img src="assets/img/web-icons/Download.svg" class="me-3" alt="Download">
+              <div>
+               <span>Work Plan 22/23  </span>
+               <span class="mx-2">•</span>
+               <span> PDF </span>
+               <span class="mx-2">•</span>
+               <span> 571.2 KB</span>
               </div>
-              <span class="p-2 position-absolute m-top-2">
-                <a href="https://www.drcf.org.uk/__data/assets/pdf_file/0020/259103/drcf-workplan2122.pdf" class="text-decoration-none reports-link" target="_blank">
-                    Work Plan 21/22 
-                </a><span class="ms-5">466.2 KB</span>
-                </span>
-          </div>
+           </div>
+          </a>
+         </div>					  
         </div>
-      </div>
-      </div>
-
+     </div>  
+            </div>		    
+		  </div>
+	  </div>	          
     </section>
     <footer class="footer">
       <div class="container-xl">
@@ -312,7 +344,7 @@
                 </li>
               </ul>
             </section>
-          </div>
+          </div>		  
         </div>
       </div>
       <div class="container-xl">
@@ -320,8 +352,8 @@
           <div class="copyright-text text-lg-start text-start text-sm-end">© Copyright DRCF All Rights Reserved</div>
         </div>
       </div>
-    </footer>
-
+    </footer>	
+	
     <a class="back-to-top">
       <i class="fa-solid fa-chevron-up"></i>
       <span>Back to top</span>
@@ -336,34 +368,6 @@
     crossorigin="anonymous"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-          slidesPerGroup: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-          slidesPerGroup: 3,
-        },
-      },
-    });
-  </script>
 
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
