@@ -3672,6 +3672,15 @@ a:focus .info-card.news-center:before {
     background-color: var(--color-secondary);
 }
 
+.link-bg-hover {
+    background-color: transparent !important;
+}
+
+.link-bg-hover:hover {
+    background-color: transparent !important;
+    text-decoration: underline !important;
+}
+
 /*--------------------------------------------------------------
 # Search Results
 --------------------------------------------------------------*/
@@ -6217,24 +6226,26 @@ blockquote p:has(cite) p::before {
     font-size: 70px;
 }
 
-.banner-full-img img{
+.banner-full-img img {
     aspect-ratio: 10/3;
 }
-.m-10{
-    margin:1rem;
+
+.m-10 {
+    margin: 1rem;
 }
 
-.m-top-2{
+.m-top-2 {
     margin-top: -3rem;
 }
 
-.m-top-2{
+.m-top-2 {
     margin-top: -2rem;
 }
 
-.m-top-1{
+.m-top-1 {
     margin-top: 1rem;
 }
+
 .reports-link {
     color: #014D85;
     font-size: 16px;
@@ -6246,6 +6257,17 @@ blockquote p:has(cite) p::before {
     color: var(--bs-link-hover-color);
 }
 
-.color-default{
+.color-default {
     color: var(--color-default) !important;
+}
+
+.txt-pading {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-bottom: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.font-size-lg {
+    font-size: large;
 }
