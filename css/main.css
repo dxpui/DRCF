@@ -3884,7 +3884,7 @@ a:focus .info-card.news-center:before {
 .title-block {
     margin: 2px;
     padding: 2px;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 
 /* .title-block .col-md-7, 
