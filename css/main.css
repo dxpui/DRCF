@@ -6289,6 +6289,9 @@ blockquote p:has(cite) p::before {
 .font-size-1rem{
     font-size: 1rem !important;
 }
+.dropdown-menu-width{
+    width: 190px !important;
+}
 .reports-link {
     color: #014D85;
     font-size: 16px;
