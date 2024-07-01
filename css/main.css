@@ -211,6 +211,14 @@ h6,
     margin-top: 5rem !important;
 }
 
+.mtop-1 {
+    margin-top: 1rem !important;
+}
+
+.display-inline-block{
+    display: inline-block;
+}
+
 .mtop-6 {
     margin-top: 6rem !important;
 }
@@ -229,6 +237,10 @@ h6,
 
 .color-default {
     color: var(--color-default) !important;
+}
+
+.color-black {
+    color: var(--color-black) !important;
 }
 
 .form-control {
@@ -1003,6 +1015,24 @@ header .search-box {
     }
 }
 
+.brand-logo-ai-hub {
+    height: 8rem;
+    width: auto;
+}
+.column-1 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background-color: var(--color-light-gray);
+    
+  }
+  .column-2 {
+    float: left;
+    width: 80%;
+    padding: 10px;
+    background-color: white;
+    
+  }
 .header {
     display: block;
     width: 100%;
@@ -3853,6 +3883,13 @@ a:focus .info-card.news-center:before {
 .callout-purple {
     padding: 50px 100px;
 }
+.callout-purple-ai-hub {
+    border-style: solid;
+}
+
+.padding-ai-hub {
+    padding: 30px 25px;
+}
 
 @media(max-width: 991px) {
     .callout-purple {
@@ -6246,6 +6283,10 @@ blockquote p:has(cite) p::before {
     margin-top: 1rem;
 }
 
+.p-left-0{
+    padding-left: 0px !important;
+}
+
 .reports-link {
     color: #014D85;
     font-size: 16px;
@@ -6270,4 +6311,14 @@ blockquote p:has(cite) p::before {
 
 .font-size-lg {
     font-size: large;
+}
+
+.sub-header {
+    background-color: var(--color-default);
+    color: var(--color-white);
+    border: 1px solid var(--color-default);
+    font-style: normal;
+    font-weight: 400;
+    padding: 10px 15px;
+    text-align: center;
 }
