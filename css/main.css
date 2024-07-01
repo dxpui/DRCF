@@ -6286,7 +6286,9 @@ blockquote p:has(cite) p::before {
 .p-left-0{
     padding-left: 0px !important;
 }
-
+.font-size-1rem{
+    font-size: 1rem !important;
+}
 .reports-link {
     color: #014D85;
     font-size: 16px;
