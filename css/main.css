@@ -6318,6 +6318,13 @@ blockquote p:has(cite) p::before {
     font-size: large;
 }
 
+.padding-right-5px{
+    padding-right: 5px !important;
+}
+.font-weight-600{
+    font-weight: 600 !important;
+}
+
 .sub-header {
     background-color: var(--color-default);
     color: var(--color-white);
