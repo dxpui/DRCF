@@ -1225,6 +1225,13 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $("#selectCategory li a").on("click", function () {
+    var text = $(this).text();
+    $("#dropdownMenuButton1").html(text + '&nbsp;<span class="caret"></span>');
+    });
+});
+
 function checkTouch() {
     var centeredDiv = $(".filters-content:last");
     var absoluteDiv = $(".filter-btn");
