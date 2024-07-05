@@ -6334,3 +6334,7 @@ blockquote p:has(cite) p::before {
     padding: 10px 15px;
     text-align: center;
 }
+.category-result-not-found{
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}

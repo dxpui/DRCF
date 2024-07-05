@@ -1232,6 +1232,48 @@ $(document).ready(function () {
     });
 });
 
+function renderNotFoundDiv(case_study_items) {
+    var category_result_not_found = $("div.category-result-not-found");
+    var hiddenDivCount = case_study_items.filter(function () {
+        return $(this).css('display') === 'none';
+    }).length;
+ 
+    if (hiddenDivCount == case_study_items.length) {
+        $(category_result_not_found).show();
+    } else {
+        $(category_result_not_found).hide();
+    }
+}
+ 
+function hideOrShowElementByCategory(element, dropdownVal) {
+    element.each(function () {
+        if ($(this).data("category").indexOf(dropdownVal) === -1) {
+            $(this).hide();
+        } else {
+            $(this).show();
+        }
+    });
+}
+ 
+$(".dropdown-menu.category li a").on("click", function () {
+    var text = $(this).text();
+    var dropdownVal = $(this).data('value');
+    var case_study_items = $("div.case-study-item");
+    var questions = $("div.question");
+    $(".btn-category").html(text + '&nbsp;<span class="caret"></span>');
+ 
+    if (dropdownVal == 0) {
+        case_study_items.show();
+        questions.show();
+        renderNotFoundDiv(case_study_items)
+        return false;
+    }
+ 
+    hideOrShowElementByCategory(case_study_items, dropdownVal);
+    hideOrShowElementByCategory(questions, dropdownVal);
+    renderNotFoundDiv(case_study_items)
+});
+
 function checkTouch() {
     var centeredDiv = $(".filters-content:last");
     var absoluteDiv = $(".filter-btn");
