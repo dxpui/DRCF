@@ -1010,7 +1010,7 @@ header .search-box {
 
 @media(max-width: 576px) {
     .brand-logo {
-        height: 24px;
+        height: 30px;
         width: 100%;
     }
 }
