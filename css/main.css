@@ -6338,3 +6338,12 @@ blockquote p:has(cite) p::before {
     margin-top: 2rem;
     margin-bottom: -2rem;
 }
+
+.papers-bg {
+    background-color: #F5F5F5;
+    background-clip: content-box;
+}
+
+.papers-bg span {
+    bottom: 11px;
+}
