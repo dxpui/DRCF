@@ -6347,3 +6347,7 @@ blockquote p:has(cite) p::before {
 .papers-bg span {
     bottom: 11px;
 }
+
+.callout-block-white {
+    color: var(--color-white);
+}
