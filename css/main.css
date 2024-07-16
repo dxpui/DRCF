@@ -6351,3 +6351,9 @@ blockquote p:has(cite) p::before {
 .callout-block-white {
     color: var(--color-white);
 }
+
+@media (max-width: 576px) {
+    .mt-sm-1 {
+      margin-top: 1rem !important;
+    }
+}
