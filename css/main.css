@@ -6357,3 +6357,9 @@ blockquote p:has(cite) p::before {
       margin-top: 1rem !important;
     }
 }
+
+@media only screen and (max-width: 860px) and (min-width: 760px) {
+    .ml-1 {
+        margin-left: -1rem !important;
+    }
+}
