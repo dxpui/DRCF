@@ -1214,7 +1214,7 @@ header .search-box {
     display: flex;
     flex-wrap: wrap;
     padding: 20px 65px 150px 65px;
-    min-height: 630px;
+    min-height: 490px;
 }
 
 .header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item {
@@ -4518,24 +4518,24 @@ a:focus .info-card.news-center:before {
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 390px) {
     .logo-list .logo-list-item {
         flex: 0 0 auto;
-        width: 25%;
+        width: 50%;
     }
 }
 
-@media only screen and (max-width: 668px) {
+@media only screen and (min-width: 668px) {
     .logo-list .logo-list-item {
         flex: 0 0 auto;
         width: 33.3333%;
     }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (min-width: 992px) {
     .logo-list .logo-list-item {
         flex: 0 0 auto;
-        width: 50%;
+        width: 25%;
     }
 }
 
