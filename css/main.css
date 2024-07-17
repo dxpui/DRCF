@@ -6363,3 +6363,22 @@ blockquote p:has(cite) p::before {
         margin-left: -1rem !important;
     }
 }
+
+.rtedesc .rich-text-block .pdf-content {
+    position: relative;
+}
+
+.rtedesc .rich-text-block .pdf-content:before {
+    content: "\f1c1";
+    font-family: FontAwesome;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 3px;
+}
+
+.rtedesc .rich-text-block .pdf-content a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-default);
+}
