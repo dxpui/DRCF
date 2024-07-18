@@ -1592,7 +1592,8 @@ header .search-box {
 }
 
 .carousel-header-cls {
-    font-size: 40px;
+    font-size: 34px;
+    line-height: 122% !important;
 }
 
 @media(max-width: 992px) {
