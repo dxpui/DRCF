@@ -6383,3 +6383,7 @@ blockquote p:has(cite) p::before {
     font-size: 14px;
     color: var(--color-default);
 }
+
+.pdng-right-0px{
+  padding-right: 0px !important;
+}
