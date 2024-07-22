@@ -92,6 +92,20 @@ window.onscroll = () => {
 
 }
 
+// Esc functionality
+$(document).on('keydown', function (e) {
+    if (e.keyCode === 27) { // ESC
+        $('.header .menu>ul>li> button').removeAttr('tabindex')
+        $('.menu').removeClass('active');
+        $('.sub-menu').removeClass('active');
+        $(".sub-menu").removeClass("sub-menu-show");
+        $(".fa-angle-down").removeClass("rotate-arrow");
+    }
+    else if (e.keyCode === 13) {//enter
+        menuMain();
+    }
+});
+
 //Main menu 
 $(document).ready(function () {
     var timeVal = $("#ToastTime").val();
