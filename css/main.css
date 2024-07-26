@@ -6397,3 +6397,43 @@ blockquote p:has(cite) p::before {
 .ml-4{
     margin-left: 4% !important;
 }
+
+/* Landscape */
+@media screen and (orientation:landscape) {
+      @media only screen and (min-width: 780px) and (max-device-width: 1400px) {
+        .show-on-landscape {
+            display: none;
+        }
+      }
+
+      @media only screen and (min-width: 560px) and (max-width: 590px){
+        .show-on-landscape {
+            display: none;
+        }
+      }
+} 
+
+/* Landscape */
+@media screen and (orientation:portrait) {
+
+    @media only screen and (min-width: 300px) and (max-width: 890px){
+      .show-on-landscape {
+          display: none;
+      }
+    }
+    @media only screen and (min-width: 900px){
+        .show-on-landscape {
+            display: none;
+        }
+      }
+} 
+
+@media only screen and (min-width: 1400px){
+    .show-on-landscape {
+        display: none;
+    }
+  }
+
+
+
+  /* and (max-height: 580px) */
