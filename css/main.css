@@ -2915,7 +2915,7 @@ a:focus .info-card.news-center:before {
 
 @media(max-width: 768px) {
     .swiper-outer {
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     .mySwiper {
@@ -6436,7 +6436,15 @@ blockquote p:has(cite) p::before {
 
   @media only screen and (max-width: 600px) {
       .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-          margin-left: -8%;
+          margin-left: -5%;
+      }
+
+      #feedbackform .Form__Title {
+          margin-left: 4%;
+      }
+
+      .mt-2-mbl{
+        margin-top: 1.5rem;
       }
   }
 
