@@ -133,18 +133,6 @@ h2,
     .h2 {
         font-size: 29px;
     }
-
-    #feedbackform.Form__Title {
-        margin-left: 3%;
-    }
-
-    #formcontainerblock.Form__Title{
-        margin-left: 3%;
-    }
-
-    .Form__Title{
-        margin-left: 3%;
-    }
 }
 
 h1.font-size-h2 {
@@ -5934,9 +5922,12 @@ blockquote p:has(cite) p::before {
     margin-bottom: 0;
 }
 
-.EPiServerForms .Form__Description {
-    padding-left: 1rem;
-}
+/* @media (max-width: 767px) { */
+    .EPiServerForms .Form__Description {
+        padding-left: 1rem;
+    }
+/* } */
+
 
 /******************************************************/
 
@@ -6217,7 +6208,7 @@ blockquote p:has(cite) p::before {
 }
 
 #feedbackform .Form__Title {
-    padding: 20px 0 0 20px;
+    padding: 20px 0 0 15px;
 }
 
 #feedbackform .Form__Status .hide {
@@ -6451,16 +6442,8 @@ blockquote p:has(cite) p::before {
           margin-left: -5%;
       }
 
-      #feedbackform .Form__Title {
-          margin-left: 4%;
-      }
-
       .mt-2-mbl{
         margin-top: 1.5rem;
-      }
-
-      .Form__Title{
-        margin-left: 2%;
       }
   }
 
