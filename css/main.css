@@ -5922,11 +5922,13 @@ blockquote p:has(cite) p::before {
     margin-bottom: 0;
 }
 
-/* @media (max-width: 767px) { */
-    .EPiServerForms .Form__Description {
+.EPiServerForms .Form__Description {
         padding-left: 1rem;
-    }
-/* } */
+}
+.EPiServerForms .Form__Title {
+    padding-left: 1rem;
+}
+
 
 
 /******************************************************/
