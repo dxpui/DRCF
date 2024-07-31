@@ -133,6 +133,18 @@ h2,
     .h2 {
         font-size: 29px;
     }
+
+    #feedbackform.Form__Title {
+        margin-left: 3%;
+    }
+
+    #formcontainerblock.Form__Title{
+        margin-left: 3%;
+    }
+
+    .Form__Title{
+        margin-left: 3%;
+    }
 }
 
 h1.font-size-h2 {
@@ -6445,6 +6457,10 @@ blockquote p:has(cite) p::before {
 
       .mt-2-mbl{
         margin-top: 1.5rem;
+      }
+
+      .Form__Title{
+        margin-left: 2%;
       }
   }
 
