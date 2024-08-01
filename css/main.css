@@ -5924,10 +5924,11 @@ blockquote p:has(cite) p::before {
 }
 
 .EPiServerForms .Form__Description {
-        padding-left: 1rem;
+        /* padding-left: 1rem; */
+        margin-bottom: 1rem;
 }
 .EPiServerForms .Form__Title {
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
 }
 
 
