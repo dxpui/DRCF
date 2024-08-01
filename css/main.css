@@ -2916,7 +2916,7 @@ a:focus .info-card.news-center:before {
 
 @media(max-width: 768px) {
     .swiper-outer {
-        margin-left: 10px;
+        margin-left: 40px;
     }
 
     .mySwiper {
