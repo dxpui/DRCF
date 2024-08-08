@@ -1090,6 +1090,17 @@ $(document).ready(function () {
             k.target = '_blank';
         }
     });
+
+    swiper.on('slideChange', function () {
+        var bullets = document.querySelectorAll('.swiper-pagination-bullet');
+        bullets.forEach(function (bullet, index) {
+            bullet.classList.remove('swiper-pagination-bullet-active');
+            if (index === swiper.realIndex) {
+                bullet.classList.add('swiper-pagination-bullet-active');
+            }
+        });
+    });
+
 });
 
 //Swiper
@@ -1323,3 +1334,4 @@ $(document).ready(function () {
     var containerBPadding = -70;
     $(".news-centre-page #slider-height").css("padding-top", (searchBHeight + containerBPadding) + "px");
 });
+
