@@ -681,14 +681,27 @@ video:focus-visible {
     text-decoration: none !important;
 }
 
-.btn-check:checked+.btn,
+/* .btn-check:checked+.btn,
 .btn.active,
 .btn.show,
 .btn:first-child:active,
 :not(.btn-check)+.btn:active {
     background-color: var(--color-secondary);
     color: var(--color-default);
+} */
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.focus,
+.btn.show,
+.btn:first-child:active,
+.btn-primary:focus,
+:not(.btn-check)+.btn:focus,
+:not(.btn-check)+.btn:active {
+    background-color: var(--color-default) !important;
+    color: var(--color-white) !important;
 }
+
 
 .center-icon-btn {
     position: relative;
