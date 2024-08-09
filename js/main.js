@@ -1101,6 +1101,39 @@ $(document).ready(function () {
         });
     });
 
+    function initializeSwiper() {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                        slidesPerGroup: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                        slidesPerGroup: 3,
+                    },
+                },
+            });
+            window.addEventListener('resize', function () {
+              alert();
+                swiper.update();  
+            });
+        }
+         
+        initializeSwiper();
+
 });
 
 //Swiper
