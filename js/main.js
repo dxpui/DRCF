@@ -1353,13 +1353,14 @@ function checkTouch() {
 }
 
 $(".teaser-cards .load-more").click(function (e) {
-    e.preventDefault = true;
+    e.preventDefault();
     var loadMoreCount = $(e.target).closest("section").data("initcount");
     var hiddenTeaserCards = $(e.target).closest("section").find(".teaser-card.d-none");
     $(hiddenTeaserCards).slice(0, loadMoreCount).removeClass("d-none").slideDown('slow');
     if (hiddenTeaserCards.length <= loadMoreCount) {
         $(e.target).addClass("d-none");
     }
+    $(e.target).focus();
 });
 
 $(document).ready(function () {
