@@ -1363,6 +1363,10 @@ $(".teaser-cards .load-more").click(function (e) {
     $(e.target).focus();
 });
 
+$( ".load-more" ).on( "click", function() {
+    $("#see_news_all").focus();
+} );
+
 $(document).ready(function () {
     var searchBHeight = $(".news-centre-page #recommendation-block-height").height();
     var containerBPadding = -70;
