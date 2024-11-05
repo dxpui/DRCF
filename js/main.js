@@ -1127,7 +1127,6 @@ $(document).ready(function () {
                 },
             });
             window.addEventListener('resize', function () {
-              alert();
                 swiper.update();  
             });
         }

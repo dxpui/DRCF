@@ -428,7 +428,7 @@ video:focus-visible {
     border: 1px solid var(--color-default);
     -webkit-transition: all .3s linear 0s;
     transition: all .3s linear 0s;
-    text-decoration: none !important;
+    text-decoration: underline !important;
 }
 
 .btn-primary:focus,
@@ -581,7 +581,7 @@ video:focus-visible {
 .btn-primary-white-border:hover {
     background-color: var(--color-secondary);
     color: var(--color-default);
-    text-decoration: none !important;
+    text-decoration: underline !important;
 }
 
 .btn-tag {
